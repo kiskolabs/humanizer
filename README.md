@@ -1,4 +1,4 @@
-Humanizer is a very simple CAPTCHA method. It has a table with questions and answers which is used to validate that the user is an actual human. Currently only Mysql an Sqlite3 are supported.
+Humanizer is a very simple CAPTCHA method. It has a table with questions and answers which is used to validate that the user is an actual human. Currently only Mysql an Sqlite3 are supported. Tested only on Rails 3.
 
 ### Installation
 
