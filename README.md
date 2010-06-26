@@ -18,7 +18,6 @@ Humanizer is a very simple CAPTCHA method. It has a table with questions and ans
 
     <%= f.label :humanizer_question_answer, HumanizerQuestion.find(@user.humanizer_question_id).question, :class => "required" %>
     <%= f.text_field :humanizer_question_answer %>
-  
     <%= f.hidden_field :humanizer_question_id, :value => @user.humanizer_question_id %>
 
 ### Configuration
