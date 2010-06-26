@@ -25,3 +25,7 @@ Humanizer is a very simple CAPTCHA method. It has a table with questions and ans
 Default translations can be found from config/locales/humanizer.en.yml
 
 You might want to add / change question and answer pairs. This can be easily done by adding / modifying entries in HumanizerQuestion model
+
+### Live sites
+
+* [ArcticStartup.com](http://arcticstartup.com/) - signup form
