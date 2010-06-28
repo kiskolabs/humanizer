@@ -1,4 +1,4 @@
-require 'humanizer_question'
+require 'humanizer/humanizer_question'
 module Humanizer
 
     def require_human_on(validate_on)
