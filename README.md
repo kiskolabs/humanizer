@@ -31,3 +31,12 @@ You might want to add / change question and answer pairs. This can be easily don
 ## Live sites
 
 * [ArcticStartup.com](http://arcticstartup.com/) - signup form
+
+## License
+
+Humanizer is licensed under the MIT License, for more details see the LICENSE file.
+
+## Question/Answer Translations
+
+* English and Finnish translations by Kisko Labs
+* German by Sven Schwyn
