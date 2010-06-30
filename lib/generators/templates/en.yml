@@ -14,7 +14,7 @@ en:
       - question: "Insert the next number in this sequence: 10, 11, 12, 13, 14, .."
         answers: ["15", "fifteen"]
       - question: "What is five times five?"
-        answers: ["25", "twentyfive"]
+        answers: ["25", "twenty-five"]
       - question: "Ten divided by two is what?"
         answers: ["5", "five"]
       - question: What day comes after Monday?
@@ -32,11 +32,11 @@ en:
       - question: What is 4 times four?
         answers: ["16", "sixteen"]
       - question: What number comes after 20?
-        answers: ["21", "twentyone"]
+        answers: ["21", "twenty-one"]
       - question: What month comes before July?
         answer: "june"
       - question: What is fifteen divided by three?
-        answer: "five"
+        answer: ["five", "5"]
       - question: What is 14 minus 4?
         answers: ["10", "ten"]
       - question: "What comes next? Monday, Tuesday, Wednesday.."
