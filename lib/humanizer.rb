@@ -8,7 +8,7 @@ module Humanizer
   attr_writer :humanizer_question_id
 
   def humanizer_question
-    humanizer_questions[humanizer_question_id]["question"]
+    humanizer_questions[humanizer_question_id.to_i]["question"]
   end
   
   def humanizer_question_id
