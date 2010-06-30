@@ -26,8 +26,8 @@ module Humanizer
   end
 
   def humanizer_answers_for_id(id)
-    answers = (humanizer_questions[id.to_i]["answer"] || humanizer_questions[id.to_i]["answers"]).to_a
-    answers.map { |a| a.to_s.downcase }
+    question = humanizer_questions[id.to_i]
+    Array(question["answer"] || question["answers"]).map { |a| a.to_s.downcase }
   end
 
   def humanizer_check_answer
