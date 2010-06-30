@@ -1,0 +1,43 @@
+fi:
+  humanizer:
+    validation:
+      error: Et ole ihminen
+    questions:
+      - question: Kaksi plus kaksi?
+        answers: ["4", "neljä"]
+      - question: Loppu hyvin, kaikki...
+        answer: hyvin
+      - question: Kahtatoista edeltävä numero?
+        answers: ["11", "yksitoista"]
+      - question: Viisi kertaa kaksi on?
+        answers: ["10", "kymmenen"]
+      - question: "Seuraava numero tässä sarjassa: 10, 11, 12, 13, 14, .."
+        answers: ["15", "viisitoista"]
+      - question: "Viisi kertaa viisi on?"
+        answers: ["25", "kaksikymmentäviisi"]
+      - question: "Kymmenen jaettuna kahdella on?"
+        answers: ["5", "viisi"]
+      - question: Maanantaita seuraava päivä on?
+        answer: "tiistai"
+      - question: Mikä on vuoden viimeinen päivä?
+        answer: "joulukuu"
+      - question: Kuinka monta minuuttia on tunnissa?
+        answers: ["60", "kuusikymmentä"]
+      - question: Vastakohta sanalle 'alas'?
+        answer: "ylös"
+      - question: Pohjoisen vastakohta?
+        answer: "etelä"
+      - question: Huonon vastakohta?
+        answer: "hyvä"
+      - question: Kuinka paljon on 4 kertaa neljä?
+        answers: ["16", "kuusitoista"]
+      - question: Mikä numero tulee kahdenkymmenen jälkeen?
+        answers: ["21", "kaksikymmentäyksi"]
+      - question: Heinäkuuta edeltävä kuukausi on?
+        answer: "kesäkuu"
+      - question: Mitä on viisitoista jaettuna kolmella?
+        answer: ["viisi", "5"]
+      - question: Mitä on 14 miinus 4?
+        answers: ["10", "kymmenen"]
+      - question: "Mikä tulee seuraavaksi? Maanantai, Tiistai, Keskiviikko..."
+        answer: "Torstai"
