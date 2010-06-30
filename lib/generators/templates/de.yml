@@ -1,0 +1,43 @@
+de:
+  humanizer:
+    validation:
+      error: "Sie sind kein Mensch"
+    questions:
+      - question: "Zwei plus zwei?"
+        answers: ["4", "vier"]
+      - question: "Alle meine Entchen, schwimmen auf dem..."
+        answer: see
+      - question: "Welche Zahl kommt vor der Zwölf?"
+        answers: ["11", "elf"]
+      - question: "Fünf mal zwei ergibt?"
+        answers: ["10", "zehn"]
+      - question: "Die nächste Zahl der Serie: 10, 11, 12, 13, 14, .."
+        answers: ["15", "fünfzehn"]
+      - question: "Wieviel ist fünf mal fünf?"
+        answers: ["25", "fünfundzwanzig"]
+      - question: "Zehn geteilt durch zwei ist?"
+        answers: ["5", "fünf"]
+      - question: "Welcher Tag folgt auf den Montag?"
+        answer: "dienstag"
+      - question: "Wie lautet der letzte Monat des Jahres?"
+        answer: "dezember"
+      - question: "Wie viele Minuten hat eine Stunde?"
+        answers: ["60", "sechzig"]
+      - question: "Was ist das Gegenteil von oben?"
+        answer: "unten"
+      - question: "Was ist das Gegenteil von Norden?"
+        answer: "süden"
+      - question: "Was ist das Gegenteil von schlecht?"
+        answer: "gut"
+      - question: "Wieviel ist 4 mal vier?"
+        answers: ["16", "sechzehn"]
+      - question: "Welche Zahl folgt auf die 20?"
+        answers: ["21", "einundzwanzig"]
+      - question: "Welcher Monat kommt vor dem Juli?"
+        answer: "juni"
+      - question: "Wieviel ist fünfzehn geteilt durch drei?"
+        answer: ["fünf", "5"]
+      - question: "Wieviel ist 14 minus 4?"
+        answers: ["10", "zehn"]
+      - question: "Was folgt als nächstes? Montag, Dienstag, Mittwoch, ..."
+        answer: "donnerstag"
