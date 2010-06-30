@@ -1,33 +1,45 @@
-require 'humanizer/humanizer_question'
 module Humanizer
+  
+  def self.included(base)
+    base.extend(ClassMethods)
+  end
+  
+  attr_accessor :humanizer_answer
+  attr_writer :humanizer_question_id
 
+  def humanizer_question
+    humanizer_questions[humanizer_question_id]["question"]
+  end
+  
+  def humanizer_question_id
+    @humanizer_question_id ||= Kernel.rand(humanizer_questions.count)
+  end
+  
+  def humanizer_correct_answer?
+    humanizer_answer && humanizer_answers_for_id(humanizer_question_id).include?(humanizer_answer.downcase)
+  end
+
+  private
+  
+  def humanizer_questions
+    @humanizer_questions ||= I18n.translate("humanizer.questions")
+  end
+
+  def humanizer_answers_for_id(id)
+    answers = (humanizer_questions[id.to_i]["answer"] || humanizer_questions[id.to_i]["answers"]).to_a
+    answers.map { |a| a.to_s.downcase }
+  end
+
+  def humanizer_check_answer
+    errors[:base] << I18n.translate("humanizer.validation.error") unless humanizer_correct_answer?
+  end
+  
+  module ClassMethods
+    
     def require_human_on(validate_on)
-        class_eval do
-          validate :humanizer_answer, :on => validate_on
-          attr_accessor :humanizer_question_answer, :humanizer_question_id
-
-          def initialize(attributes = {})
-            super
-            case ActiveRecord::Base.connection.adapter_name
-            when 'MySQL'
-              random_sql='rand()'
-            when 'SQLite'
-              random_sql='random()'
-            end
-            self.humanizer_question_id = HumanizerQuestion.find(:first, :order => random_sql).id if self.humanizer_question_id.nil?
-          end
-          
-          
-          def humanizer_answer
-            if humanizer_question_answer.nil? or humanizer_question_answer.downcase != HumanizerQuestion.find(humanizer_question_id).answer.downcase
-              errors[:base] << (I18n::t("humanizer.validation.error"))
-              
-            end
-          end
-        end
-      
+      validate :humanizer_check_answer, :on => validate_on
     end
     
+  end
+  
 end
-
-ActiveRecord::Base.extend Humanizer

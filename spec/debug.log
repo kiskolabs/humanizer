@@ -1,2 +1,0 @@
-# Logfile created on 2010-06-26 14:44:12 +0300 by logger.rb/25413
-SQLite3::SQLException: no such function: rand: SELECT     "humanizer_questions".* FROM       "humanizer_questions" ORDER BY  rand() LIMIT 1
