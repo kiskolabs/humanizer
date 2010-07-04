@@ -11,7 +11,7 @@ pt-BR:
         answers: ["11", "onze"]
       - question: Quanto é cinco vezes dois?
         answers: ["10", "dez"]
-      - question: "Coloque o próximo número da sequência: 10, 11, 12, 13, 14, .."
+      - question: "Coloque o próximo número na sequência: 10, 11, 12, 13, 14, .."
         answers: ["15", "quinze"]
       - question: Quanto é cinco vezes cinco?
         answers: ["25", "vinte e cinco"]
@@ -23,8 +23,8 @@ pt-BR:
         answer: "dezembro"
       - question: Quantos minutos tem uma hora?
         answers: ["60", "sessenta"]
-      - question: Qual é o contrário de baixo?
-        answers: ["alto", "cima"]
+      - question: Qual é o contrário de alto?
+        answer: "baixo"
       - question: Qual é o contrário de norte?
         answer: "sul"
       - question: Qual é o contrário de ruim?
