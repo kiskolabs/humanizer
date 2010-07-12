@@ -1,0 +1,43 @@
+nl:
+  humanizer:
+    validation:
+      error: U bent geen mens
+    questions:
+      - question: Twee plus twee?
+        answers: ["4", "vier"]
+      - question: "Een twee drie vier, hoedje van..."
+        answer: papier
+      - question: Wat is het nummer tussen tien en twaalf?
+        answers: ["11", "elf"]
+      - question: Vijf maal twee is hoeveel?
+        answers: ["10", "tien"]
+      - question: "Vul het volgende nummer in deze rij aan: 10, 11, 12, 13, 14, .."
+        answers: ["15", "vijftien"]
+      - question: "Wat is vijf maail vijf?"
+        answers: ["25", "vijfentwintig"]
+      - question: "Tein gedeeld door twee is hoeveel?"
+        answers: ["5", "vijf"]
+      - question: Welke dag komt er na maandag?
+        answer: "dinsdag"
+      - question: Wat is de laatste maand van het jaar?
+        answer: "december"
+      - question: Hoeveel minuten zitten er in een uur?
+        answers: ["60", "zestig"]
+      - question: Wat is het omgkeerde van benden?
+        answer: "boven"
+      - question: Wat is het omgekeerde van zuid?
+        answer: ["noord", "noorden"]
+      - question: Wat is het omgekeerde van slecht?
+        answer: "goed"
+      - question: Hoeveel is 4 maal vier?
+        answers: ["16", "zestien"]
+      - question: Welk getal komt er na 20?
+        answers: ["21", "eenentwintig"]
+      - question: Welke maand komt er voor juli?
+        answer: "juni"
+      - question: Hoeveel is vijftien gedeeld door drie?
+        answer: ["vijf", "5"]
+      - question: Hoeveel is 14 min 4?
+        answers: ["10", "tien"]
+      - question: "Wat is het volgende? Maandag, dinsdag, woensdag..."
+        answer: "donderdag"
