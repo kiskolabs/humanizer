@@ -4,8 +4,8 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 
 ## Installation
 
-1. gem install humanizer
-2. rails g humanizer
+1. `gem install humanizer`
+2. `rails g humanizer`
 
 ## Advanced Installation
 
@@ -44,7 +44,7 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 
 ## Question/Answer Translations
 
-* English, Finnish and Portuguese translations by Kisko Labs
+* English, Finnish and Portuguese translations by [Kisko Labs](http://kiskolabs.com/)
 * German by [Sven Schwyn](http://github.com/svoop)
 * Dutch by [Joren De Groof](http://github.com/joren)
 * Brazilian Portuguese by [Britto](http://github.com/britto)
