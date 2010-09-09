@@ -8,11 +8,15 @@ Gem::Specification.new do |s|
   s.email       = ["antti@kiskolabs.com", "joao@kiskolabs.com"]
   s.homepage    = "http://github.com/kiskolabs/humanizer"
   s.summary     = "A really simple captcha solution"
-  s.description = "Recaptcha was too much for us, so we created this. Shout-out to brain_busters"
+  s.description = "reCAPTCHA was too much for us, so we created this. Simplest captcha ever."
 
   s.required_rubygems_version = ">= 1.3.6"
 
   s.rubyforge_project         = "humanizer"
+
+  s.add_development_dependency "bundler", "~> 1.0.0"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "rspec", "~> 2.0.0.beta"
 
   s.files        = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md", "lib/generators/**/*.*"]
   s.require_path = 'lib'

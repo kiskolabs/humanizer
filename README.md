@@ -7,6 +7,12 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 1. gem install humanizer
 2. rails g humanizer
 
+## Advanced Installation
+
+* Install all locales: `rails g humanizer --all-locales`
+* Show available locales: `rails g humanizer --show-locales`
+* Install selected locales: `rails g humanizer en fi de`
+
 ## Usage
 
 1. In your model, include Humanizer and add the #require_human_on method, example:
@@ -24,9 +30,9 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 
 ## Configuration
 
-Default translations can be found from config/locales/humanizer.en.yml
+Default translations can be found in config/locales/
 
-You might want to add / change question and answer pairs. This can be easily done by adding / modifying entries in locales file.
+You might want to add/change question and answer pairs. This can be easily done by adding/modifying entries in locales file.
 
 ## Live sites
 
@@ -38,5 +44,12 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 
 ## Question/Answer Translations
 
-* English and Finnish translations by Kisko Labs
-* German by Sven Schwyn
+* English, Finnish and Portuguese translations by Kisko Labs
+* German by [Sven Schwyn](http://github.com/svoop)
+* Dutch by [Joren De Groof](http://github.com/joren)
+* Brazilian Portuguese by [Britto](http://github.com/britto)
+
+## Contributors
+
+* [Florian Bertholin](http://github.com/Arkan)
+* [seogrady](http://github.com/seogrady)
