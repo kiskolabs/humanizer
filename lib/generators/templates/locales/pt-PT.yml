@@ -1,0 +1,43 @@
+pt-PT:
+  humanizer:
+    validation:
+      error: Você não é humano
+    questions:
+      - question: Dois mais dois?
+        answers: ["4", "quatro"]
+      - question: "Água mole em pedra dura, tanto bate até que..."
+        answer: fura
+      - question: Que número vem antes de doze?
+        answers: ["11", "onze"]
+      - question: Cinco vezes dois?
+        answers: ["10", "dez"]
+      - question: "Coloque o próximo número na sequência: 10, 11, 12, 13, 14, .."
+        answers: ["15", "quinze"]
+      - question: Cinco vezes cinco?
+        answers: ["25", "vinte e cinco"]
+      - question: Quanto é dez dividido por dois?
+        answers: ["5", "cinco"]
+      - question: Que dia vem depois da segunda-feira?
+        answers: ["terça", "terça-feira"]
+      - question: Qual é o último mês do ano?
+        answer: "dezembro"
+      - question: Quantos minutos tem uma hora?
+        answers: ["60", "sessenta"]
+      - question: Qual é o contrário de alto?
+        answer: "baixo"
+      - question: Qual é o contrário de norte?
+        answer: "sul"
+      - question: Qual é o contrário de mau?
+        answer: "bom"
+      - question: Quanto é quatro vezes quatro?
+        answers: ["16", "dezasseis"]
+      - question: Que número vem depois de vinte?
+        answers: ["21", "vinte e um"]
+      - question: Que mês vem antes de julho?
+        answer: "junho"
+      - question: Quanto é quinze dividido por três?
+        answer: ["cinco", "5"]
+      - question: Quanto é 14 menos 4?
+        answers: ["10", "dez"]
+      - question: "Qual é o próximo? segunda, terça, quarta, ..."
+        answers: ["quinta", "quinta-feira"]
