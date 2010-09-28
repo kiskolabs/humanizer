@@ -13,7 +13,7 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 * Show available locales: `rails g humanizer --show-locales`
 * Install selected locales: `rails g humanizer en fi de`
 
-## Usage
+## Usage in Simple Form
 
 1. In your model, include Humanizer and add the #require_human_on method, example:
 
@@ -27,6 +27,43 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
           <%= f.label :humanizer_answer, @model.humanizer_question %>
           <%= f.text_field :humanizer_answer %>
           <%= f.hidden_field :humanizer_question_id %>
+
+## Usage in Nested Model Form (Post has many Comments)
+
+1. In your Comment model, include Humanizer and add the #require_human_on method:
+
+          class Comment < ActiveRecord::Base
+	    belongs_to :post
+            include Humanizer
+            require_human_on :create
+          end
+
+2. In your Post model, define the relationship:
+
+          class Post < ActiveRecord::Base
+            has_many :comments 
+            accepts_nested_attributes_for :comments
+          end
+
+3. In your posts_controller.rb file, add a new comment under the 'show' action:
+
+           def show
+           . . .
+           @comment = Comment.new
+
+4. In your comments_controller.rb file, for the 'create' action, edit your @comment assignment, and add a @post assignment:
+
+           def create
+           @post = Post.find(params[:post_id])
+           @comment = @post.comments.create(params[:comment])
+
+4. Ask the question in the form (/views/posts/show.html.erb for example):
+
+           <%= form_for [@post, @comment] do |f| %>
+           . . . 
+           <%= f.label :humanizer_answer, @comment.humanizer_question %>
+           <%= f.text_field :humanizer_answer %>
+           <%= f.hidden_field :humanizer_question_id %>
 
 ## Configuration
 
