@@ -33,7 +33,7 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 1. In your Comment model, include Humanizer and add the #require_human_on method:
 
           class Comment < ActiveRecord::Base
-	    belongs_to :post
+            belongs_to :post
             include Humanizer
             require_human_on :create
           end
