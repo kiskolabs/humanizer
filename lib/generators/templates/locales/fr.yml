@@ -1,0 +1,43 @@
+fr:
+  humanizer:
+    validation:
+      error: Vous n'êtes pas humain
+    questions:
+      - question: Deux plus deux font?
+        answers: ["4", "quatre"]
+      - question: "Liberté, Égalité,..."
+        answer: fraternité
+      - question: Quel est le chiffre qui précède douze?
+        answers: ["11", "onze"]
+      - question: Cinq fois deux font?
+        answers: ["10", "dix"]
+      - question: "Quel chiffre qui suivra? 10, 11, 12, 13, 14, .."
+        answers: ["15", "quinze"]
+      - question: "Cinq fois cinq ne font pas dix mais?"
+        answers: ["25", "vingt-cinq"]
+      - question: "Dix divisé par deux fait?"
+        answers: ["5", "cinq"]
+      - question: Le jour de la semaine qui succède au dimanche est le...?
+        answer: ["lundi", "le lundi"]
+      - question: Quel est le dernier mois de l'année'?
+        answer: "décembre"
+      - question: L'heure correspond à combien de minutes?
+        answers: ["60", "soixante"]
+      - question: Le contraire de 'haut' est?
+        answer: "bas"
+      - question: Le sens inverse du Nord?
+        answer: ["sud", "le sud"]
+      - question: Quel est le contraire du bien?
+        answer: ["mal", "le mal"]
+      - question: Que font 4 fois quatre?
+        answers: ["16", "seize"]
+      - question: Quel chiffre suit 20?
+        answers: ["21", "vingt-et-un"]
+      - question: Quel mois précède Juillet?
+        answer: "juin"
+      - question: Quinze divisé par 3 font?
+        answer: ["cinq", "5"]
+      - question: Quatorze moins 4 font?
+        answers: ["10", "dix"]
+      - question: "Le suivant est? lundi, mardi, mercredi.."
+        answer: "jeudi"
