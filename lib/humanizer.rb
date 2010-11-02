@@ -4,7 +4,7 @@ module Humanizer
     base.extend(ClassMethods)
   end
   
-  attr_accessor :humanizer_answer
+  attr_accessor :humanizer_answer, :real_human
   attr_writer :humanizer_question_id
 
   def humanizer_question
@@ -37,8 +37,8 @@ module Humanizer
   module ClassMethods
     
     def require_human_on(validate_on, opts = {})
-      opts[:on] = validate_on
-      validate :humanizer_check_answer,  opts
+      validates :humanizer_check_answer, :presence => {:on => validate_on,
+                                                       :unless  => proc {|obj|  obj.real_human}}
     end
     
   end
