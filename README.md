@@ -48,6 +48,7 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 * German by [Sven Schwyn](http://github.com/svoop)
 * Dutch by [Joren De Groof](http://github.com/joren)
 * Brazilian Portuguese by [Britto](http://github.com/britto)
+* Russian by [Shark](http://github.com/Serheo)
 
 ## Contributors
 
