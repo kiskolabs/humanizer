@@ -1,14 +1,20 @@
+### Humanizer 2.2.0 (2010-11-18)
+
+Added translations: French, Russian.
+Added real_human attribute to skip validation.
+
+
 ### Humanizer 2.1.1 (2010-09-09)
 
-Updated changelog
+Updated changelog.
 
 
 ### Humanizer 2.1.0 (2010-09-09)
 
-Minor polishing
-Support for Formtastic inline errors
-Added flexibility to validations
-Added translations: Dutch, Brazilian Portuguese
+Minor polishing.
+Support for Formtastic inline errors.
+Added flexibility to validations.
+Added translations: Dutch, Brazilian Portuguese.
 
 
 ### Humanizer 2.0.0 (2010-06-30)
