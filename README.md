@@ -34,6 +34,10 @@ Default translations can be found in config/locales/
 
 You might want to add/change question and answer pairs. This can be easily done by adding/modifying entries in locales file.
 
+## Skipping validation
+
+Set the attribute 'real_human' to true on the object you want to skip the Humanizer validation. Handy for testing or console use.
+
 ## Live sites
 
 * [ArcticStartup.com](http://arcticstartup.com/) - signup form
