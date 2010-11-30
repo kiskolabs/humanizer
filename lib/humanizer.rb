@@ -36,9 +36,8 @@ module Humanizer
   
   module ClassMethods
     
-    def require_human_on(validate_on, opts = {})
-      validates :humanizer_check_answer, :presence => {:on => validate_on,
-                                                       :unless  => proc {|obj|  obj.real_human}}
+    def require_human_on(validate_on)
+      validate :humanizer_check_answer, :on => validate_on, :unless => proc { |obj| obj.real_human }
     end
     
   end
