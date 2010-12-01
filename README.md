@@ -28,6 +28,8 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
         <%= f.text_field :humanizer_answer %>
         <%= f.hidden_field :humanizer_question_id %>
 
+3. If you are using attr_accessible, remember to whitelist `:humanizer_answer` and `:humanizer_question_id`.
+
 ## Configuration
 
 Default translations can be found in config/locales/
