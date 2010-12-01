@@ -36,8 +36,15 @@ You might want to add/change question and answer pairs. This can be easily done 
 
 ## Skipping validation
 
-Set the attribute 'real_human' to true on the object you want to skip the Humanizer validation. Handy for testing or console use.
+You might want to skip the humanizer validations on your tests or rails console.
 
+You can just have a simple attribute on your model and use it to bypass the validation. Here's an example:
+
+          attr_accessor :bypass_humanizer
+          require_human_on :create, :unless => :bypass_humanizer
+
+Now when bypass_humanizer is true, validation will be skipped.
+          
 ## Live sites
 
 * [ArcticStartup.com](http://arcticstartup.com/) - signup form
