@@ -89,26 +89,5 @@ describe Humanizer do
     end
     
   end
-
-  context "when real human" do
-    it "should pass the validations when correct answer" do
-      @user.humanizer_question_id = 1
-      @user.humanizer_answer = "HILL"
-      @user.humanizer_correct_answer?.should be_true
-      @user.humanizer_answer = "hiLL"
-      @user.humanizer_correct_answer?.should be_true
-      @user.valid?
-      @user.errors.blank?.should be_true
-    end
-
-    it "should pass the validations when wrong answer" do
-      @user.humanizer_question_id = 1
-      @user.humanizer_answer = "slope"
-      @user.humanizer_correct_answer?.should be_false
-      @user.valid?
-      @user.errors.blank?.should be_true
-    end
-    
-  end
-
+  
 end

@@ -2,10 +2,3 @@
 .bundle
 Gemfile.lock
 *.gem
-.idea/.rakeTasks
-.idea/encodings.xml
-.idea/humanizer.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
