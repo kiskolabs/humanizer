@@ -1,3 +1,9 @@
+### Humanizer 2.3.0 (2010-12-01)
+
+Removed the real_human attribute.
+Added an example on how to manually skip validations to the README.
+Added a note about attr_accessible to the README.
+
 ### Humanizer 2.2.0 (2010-11-18)
 
 Added translations: French, Russian.
