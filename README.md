@@ -17,16 +17,16 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 
 1. In your model, include Humanizer and add the #require_human_on method, example:
 
-          class User < ActiveRecord::Base
-            include Humanizer
-            require_human_on :create
-          end
+        class User < ActiveRecord::Base
+          include Humanizer
+          require_human_on :create
+        end
 
 2. Ask the question in the form, example:
 
-          <%= f.label :humanizer_answer, @model.humanizer_question %>
-          <%= f.text_field :humanizer_answer %>
-          <%= f.hidden_field :humanizer_question_id %>
+        <%= f.label :humanizer_answer, @model.humanizer_question %>
+        <%= f.text_field :humanizer_answer %>
+        <%= f.hidden_field :humanizer_question_id %>
 
 ## Configuration
 
@@ -40,8 +40,8 @@ You might want to skip the humanizer validations on your tests or rails console.
 
 You can just have a simple attribute on your model and use it to bypass the validation. Here's an example:
 
-          attr_accessor :bypass_humanizer
-          require_human_on :create, :unless => :bypass_humanizer
+    attr_accessor :bypass_humanizer
+    require_human_on :create, :unless => :bypass_humanizer
 
 Now when bypass_humanizer is true, validation will be skipped.
           
