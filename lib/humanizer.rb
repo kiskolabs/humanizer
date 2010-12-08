@@ -8,18 +8,26 @@ module Humanizer
   attr_writer :humanizer_question_id
 
   def humanizer_question
-    humanizer_questions[humanizer_question_id.to_i]["question"]
+    humanizer_questions[humanizer_question_id]["question"]
   end
   
   def humanizer_question_id
-    @humanizer_question_id ||= Kernel.rand(humanizer_questions.count)
+    @humanizer_question_id ||= change_humanizer_question_id
   end
   
+  def generate_random_question_id(current = -1)
+    change_humanizer_question_id until current.to_i != humanizer_question_id
+  end
+    
   def humanizer_correct_answer?
     humanizer_answer && humanizer_answers_for_id(humanizer_question_id).include?(humanizer_answer.downcase)
   end
 
   private
+  
+  def change_humanizer_question_id
+    @humanizer_question_id = Kernel.rand(humanizer_questions.count).to_i
+  end
   
   def humanizer_questions
     @humanizer_questions ||= I18n.translate("humanizer.questions")

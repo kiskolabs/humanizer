@@ -90,4 +90,26 @@ describe Humanizer do
     
   end
   
+  context "generate_random_question_id" do
+    
+    it "sets humanizer_question_id with no params" do
+      @user.generate_random_question_id
+      @user.instance_variable_get(:@humanizer_question_id).should_not be_nil
+    end
+    context 'when passing in a value' do
+      before do
+        # return 5 for humanizer question id the first and second time
+        @user.should_receive(:humanizer_question_id).and_return(5)
+        @user.should_receive(:humanizer_question_id).and_return(5)        
+        # return 6(a different value) for humanizer question id the third time
+        @user.should_receive(:humanizer_question_id).and_return(6)
+        # ensure that change humanizer question id was called twice
+        @user.should_receive(:change_humanizer_question_id).twice
+        
+      end
+      it "sets humanizer_question_id to a new value" do
+        @user.generate_random_question_id(5)
+      end
+    end
+  end
 end
