@@ -12,11 +12,13 @@ module Humanizer
   end
   
   def humanizer_question_id
-    @humanizer_question_id ||= change_humanizer_question_id
+    @humanizer_question_id ||= random_humanizer_question_id
   end
   
-  def generate_random_question_id(current = -1)
-    change_humanizer_question_id until current.to_i != humanizer_question_id
+  def change_humanizer_question(current=nil)
+    @humanizer_question_ids = nil if humanizer_question_ids.compact.count == 1
+    humanizer_question_ids.delete(current) if current
+    @humanizer_question_id = random_humanizer_question_id
   end
     
   def humanizer_correct_answer?
@@ -25,12 +27,16 @@ module Humanizer
 
   private
   
-  def change_humanizer_question_id
-    @humanizer_question_id = Kernel.rand(humanizer_questions.count).to_i
-  end
-  
   def humanizer_questions
     @humanizer_questions ||= I18n.translate("humanizer.questions")
+  end
+
+  def humanizer_question_ids
+    @humanizer_question_ids ||= (0...humanizer_questions.count).to_a
+  end
+
+  def random_humanizer_question_id
+    humanizer_question_ids[rand(humanizer_question_ids.count)]
   end
 
   def humanizer_answers_for_id(id)

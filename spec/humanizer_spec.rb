@@ -30,8 +30,8 @@ describe Humanizer do
     context "id" do
       
       it "is a random index for the questions array" do
-        Kernel.should_receive(:rand).with(2).and_return(1)
-        @user.humanizer_question_id.should == 1
+        @user.should_receive(:humanizer_questions).and_return([1])
+        @user.humanizer_question_id.should == 0
       end
       
     end
@@ -90,26 +90,35 @@ describe Humanizer do
     
   end
   
-  context "generate_random_question_id" do
+  describe "#change_humanizer_question" do
     
     it "sets humanizer_question_id with no params" do
-      @user.generate_random_question_id
+      @user.change_humanizer_question
       @user.instance_variable_get(:@humanizer_question_id).should_not be_nil
     end
-    context 'when passing in a value' do
-      before do
-        # return 5 for humanizer question id the first and second time
-        @user.should_receive(:humanizer_question_id).and_return(5)
-        @user.should_receive(:humanizer_question_id).and_return(5)        
-        # return 6(a different value) for humanizer question id the third time
-        @user.should_receive(:humanizer_question_id).and_return(6)
-        # ensure that change humanizer question id was called twice
-        @user.should_receive(:change_humanizer_question_id).twice
-        
+
+    context "when passing in a value" do
+
+      before(:each) do
+        questions = mock(:count => 4)
+        @user.stub!(:humanizer_questions).and_return(questions)
+        @user.send(:humanizer_question_ids).should == [0,1,2,3]
       end
-      it "sets humanizer_question_id to a new value" do
-        @user.generate_random_question_id(5)
+
+      it "removes the question from the possible questions" do
+        @user.change_humanizer_question(2)
+        @user.send(:humanizer_question_ids).should == [0,1,3]
       end
+
+      it "reloads the questions when it runs out" do
+        3.times { |i| @user.change_humanizer_question(i) }
+        @user.send(:humanizer_question_ids).should == [3]
+        @user.change_humanizer_question(3)
+        @user.send(:humanizer_question_ids).should == [0,1,2]
+      end
+
     end
+
   end
+
 end
