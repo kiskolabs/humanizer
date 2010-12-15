@@ -46,6 +46,14 @@ You can just have a simple attribute on your model and use it to bypass the vali
     require_human_on :create, :unless => :bypass_humanizer
 
 Now when bypass_humanizer is true, validation will be skipped.
+
+## Reloading questions
+
+In case you want to give your users the option to change the question, there's a #change_humanizer_question method to help you.
+
+To make sure the current question doesn't get asked again, you can pass the current question id to the method. For example:
+
+    @user.change_humanizer_question(params[:user][:humanizer_question_id])
           
 ## Live sites
 
