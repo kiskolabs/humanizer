@@ -1,3 +1,8 @@
+### Humanizer 2.4.0 (2010-12-15)
+
+* Added #change_humanizer_question for question reloading.
+
+
 ### Humanizer 2.3.0 (2010-12-01)
 
 * Removed the real_human attribute.
