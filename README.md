@@ -73,5 +73,6 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 
 ## Contributors
 
-* [Florian Bertholin](http://github.com/Arkan)
-* [seogrady](http://github.com/seogrady)
+* [Florian Bertholin](https://github.com/Arkan)
+* [seogrady](https://github.com/seogrady)
+* [yairgo](https://github.com/yairgo)
