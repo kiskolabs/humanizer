@@ -2,7 +2,6 @@ require "bundler"
   
 Bundler.setup
 
-require "rails"
 require "active_model"
 require "rspec"
 require "humanizer"
