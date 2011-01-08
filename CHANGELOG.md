@@ -1,3 +1,8 @@
+### Humanizer 2.4.2 (2011-01-08)
+
+* Added translations: Spanish.
+
+
 ### Humanizer 2.4.1 (2010-12-16)
 
 * Fixes a bug when the humanizer_question_id is given as a String.

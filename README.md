@@ -70,6 +70,7 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 * Dutch by [Joren De Groof](http://github.com/joren)
 * Brazilian Portuguese by [Britto](http://github.com/britto)
 * Russian by [Shark](http://github.com/Serheo)
+* Spanish by [Juanjo Bazán](https://github.com/xuanxu)
 
 ## Contributors
 
