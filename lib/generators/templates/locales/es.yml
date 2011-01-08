@@ -1,0 +1,43 @@
+es:
+  humanizer:
+    validation:
+      error: Usted no es humano
+    questions:
+      - question: "¿Dos más dos?"
+        answers: ["4", "cuatro"]
+      - question: "La paciencia es la madre de la..."
+        answer: "ciencia"
+      - question: "¿Qué número va antes del doce?"
+        answers: ["11", "once"]
+      - question: "¿Cuánto es cinco por dos?"
+        answers: ["10", "diez"]
+      - question: "Inserta el siguiente número de esta secuencia: 10, 11, 12, 13, 14, .."
+        answers: ["15", "quince"]
+      - question: "¿Cuánto es cinco por cinco?"
+        answers: ["25", "veinticinco"]
+      - question: "¿Cuánto es diez dividido entre dos?"
+        answers: ["5", "cinco"]
+      - question: "¿Qué día va detrás del lunes?"
+        answer: "martes"
+      - question: "¿Cual es el último mes del año?"
+        answer: "diciembre"
+      - question: "¿Cuántos minutos tiene una hora?"
+        answers: ["60", "sesenta"]
+      - question: "¿Cual es el opuesto de arriba?"
+        answer: "abajo"
+      - question: "¿Cual es el opuesto de norte?"
+        answer: "sur"
+      - question: "¿Cual es el opuesto de malo?"
+        answer: "bueno"
+      - question: "¿Cuánto es cuatro por 4?"
+        answers: ["16", "dieciseis"]
+      - question: "¿Qué número va después del 20?"
+        answers: ["21", "veintiuno"]
+      - question: "¿Qué mes va antes de julio?"
+        answer: "junio"
+      - question: "¿Cuánto es quince dividido entre tres?"
+        answer: ["cinco", "5"]
+      - question: "¿Cuánto es 14 menos 4?"
+        answers: ["10", "diez"]
+      - question: "¿Qué va después? Lunes, Martes, Miércoles..."
+        answer: "Jueves"
