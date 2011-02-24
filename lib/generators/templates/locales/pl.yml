@@ -1,0 +1,43 @@
+pl:
+  humanizer:
+    validation:
+      error: Nie jesteś człowiekiem
+    questions:
+      - question: Dwa plus dwa?
+        answers: ["4", "cztery"]
+      - question: Wlazł kotek na...
+        answer: płotek
+      - question: Jaka jest liczba poprzedzająca dwanaście?
+        answers: ["11", "jedenaście"]
+      - question: Pięć razy dwa to?
+        answers: ["10", "dziesięć"]
+      - question: "Wstaw następną w kolejności liczbę: 10, 11, 12, 13, 14, ..."
+        answers: ["15", "piętnaście"]
+      - question: "Ile to jest pięć razy pięć?"
+        answers: ["25", "dwadzieścia pięć"]
+      - question: "Ile to jest dziesięć dzielone na dwa?"
+        answers: ["5", "pięć"]
+      - question: Jaki dzień następuje po poniedziałku?
+        answer: "wtorek"
+      - question: Jaki jest ostatni miesiąc roku?
+        answer: "grudzień"
+      - question: Ile jest minut w godzinie?
+        answers: ["60", "sześćdziesiąt"]
+      - question: Jakie jest przeciwieństwo słowa góra?
+        answer: "dół"
+      - question: Jakie jest przeciwieństwo słowa północ?
+        answer: "południe"
+      - question: Jakie jest przeciwieństwo słowa zły?
+        answer: "dobry"
+      - question: Ile to jest 4 razy cztery?
+        answers: ["16", "szesnaście"]
+      - question: Jaka jest liczba po 20?
+        answers: ["21", "dwadzieścia jeden"]
+      - question: Jaki jest miesiąc przed lipcem?
+        answer: "czerwiec"
+      - question: Ile to jest piętnaście dzielone na trzy?
+        answer: ["pięć", "5"]
+      - question: Ile to jest 14 minus 4?
+        answers: ["10", "dziesięć"]
+      - question: "Co jest następne? Poniedziałek, wtorek, środa, ..."
+        answer: "Czwartek"
