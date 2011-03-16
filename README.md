@@ -71,6 +71,7 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 * Brazilian Portuguese by [Britto](http://github.com/britto)
 * Russian by [Shark](http://github.com/Serheo)
 * Spanish by [Juanjo Bazán](https://github.com/xuanxu)
+* Polish by [Maciek O](https://github.com/ohaleck)
 
 ## Contributors
 
