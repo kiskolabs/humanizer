@@ -1,3 +1,7 @@
+### Humanizer 2.4.3 (2011-03-16)
+
+* Added translations: Polish.
+
 ### Humanizer 2.4.2 (2011-01-08)
 
 * Added translations: Spanish.
