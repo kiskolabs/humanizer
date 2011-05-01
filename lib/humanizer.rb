@@ -45,7 +45,7 @@ module Humanizer
   end
 
   def humanizer_check_answer
-    errors[:humanizer_answer] << I18n.translate("humanizer.validation.error") unless humanizer_correct_answer?
+    errors.add(:humanizer_answer, I18n.translate("humanizer.validation.error")) unless humanizer_correct_answer?
   end
   
   module ClassMethods
