@@ -79,3 +79,7 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 * [Florian Bertholin](https://github.com/Arkan)
 * [seogrady](https://github.com/seogrady)
 * [yairgo](https://github.com/yairgo)
+
+## CI Build Status
+
+[![Build Status](http://travis-ci.org/kiskolabs/humanizer.png)](http://travis-ci.org/kiskolabs/humanizer)
