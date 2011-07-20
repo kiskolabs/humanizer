@@ -1,0 +1,43 @@
+it:
+  humanizer:
+    validation:
+      error: Non sei un umano
+    questions:
+      - question: Due più due?
+        answers: ["4", "quattro"]
+      - question: Chi va a Roma perde la...
+        answer: "poltrona"
+      - question: Qual è il numero precedente al dodici?
+        answers: ["11", "undici"]
+      - question: Cinque volte due fa?
+        answers: ["10", "dieci"]
+      - question: "Inserisci il prossimo numero di questa sequenza: 10, 11, 12, 13, 14, .."
+        answers: ["15", "quindici"]
+      - question: "Quanto fa cinque volte cinque?"
+        answers: ["25", "venticinque"]
+      - question: "Dieci diviso due fa?"
+        answers: ["5", "cinque"]
+      - question: Che giorno viene dopo lunedì?
+        answers: ["martedì", "martedi"]
+      - question: Qual è l'ultimo mese dell'anno?
+        answer: "dicembre"
+      - question: Quanti minuti ci sono in un'ora?
+        answers: ["60", "sessanta"]
+      - question: Qual è il contrario di giù?
+        answers: ["su", "sù"]
+      - question: Qual è la direzione opposta al nord?
+        answer: "sud"
+      - question: Qual è il contrario di cattivo?
+        answer: "buono"
+      - question: Quanto fa 4 volte quattro?
+        answers: ["16", "sedici"]
+      - question: Che numero viene dopo il 20?
+        answers: ["21", "ventuno"]
+      - question: Che mese viene prima di luglio?
+        answer: "giugno"
+      - question: Quanto fa quindici dviso tre?
+        answers: ["cinque", "5"]
+      - question: Quanto fa 14 meno 4?
+        answers: ["10", "dieci"]
+      - question: "Cosa viene dopo? Lunedì, martedì, mercoledì, .."
+        answers: ["Giovedì", "Giovedi", "giovedì", "giovedi"]
