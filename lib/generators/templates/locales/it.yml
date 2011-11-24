@@ -35,7 +35,7 @@ it:
         answers: ["21", "ventuno"]
       - question: Che mese viene prima di luglio?
         answer: "giugno"
-      - question: Quanto fa quindici dviso tre?
+      - question: Quanto fa quindici diviso tre?
         answers: ["cinque", "5"]
       - question: Quanto fa 14 meno 4?
         answers: ["10", "dieci"]
