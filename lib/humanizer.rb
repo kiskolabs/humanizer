@@ -22,7 +22,7 @@ module Humanizer
   end
     
   def humanizer_correct_answer?
-    humanizer_answer && humanizer_answers_for_id(humanizer_question_id).include?(humanizer_answer.downcase)
+    humanizer_answer && humanizer_answers_for_id(humanizer_question_id).include?(humanizer_answer.mb_chars.downcase)
   end
 
   private
