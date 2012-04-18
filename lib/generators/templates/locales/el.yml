@@ -1,0 +1,43 @@
+en:
+  humanizer:
+    validation:
+      error: You're not a human
+    questions:
+      - question: Δύο και δύο κάνουν;
+        answers: ["4", "τέσσερα"]
+      - question: Jack and Jill went up the...
+        answer: hill
+      - question: Ποιός είναι ο αριθμός πριν το 12;
+        answers: ["11", "έντεκα"]
+      - question: Πόσο κάνουν 2 επι 5;
+        answers: ["10", "δέκα"]
+      - question: "Εισάγετε τον επόμενο αριθμό στο τέλος της ακολουθίας: 10, 11, 12, 13, 14, .."
+        answers: ["15", "δεκαπέντε"]
+      - question: "Πόσο μας κάνουν 5 επι 5;"
+        answers: ["25", "twenty-five"]
+      - question: "Πόσο μας κάνουν 10 δια 2;"
+        answers: ["5", "five"]
+      - question: What day comes after Monday?
+        answer: "tuesday"
+      - question: What is the last month of the year?
+        answer: "december"
+      - question: How many minutes are in an hour?
+        answers: ["60", "sixty"]
+      - question: What is the opposite of down?
+        answer: "up"
+      - question: What is the opposite of north?
+        answer: "south"
+      - question: What is the opposite of bad?
+        answer: "good"
+      - question: What is 4 times four?
+        answers: ["16", "sixteen"]
+      - question: What number comes after 20?
+        answers: ["21", "twenty-one"]
+      - question: What month comes before July?
+        answer: "june"
+      - question: What is fifteen divided by three?
+        answer: ["five", "5"]
+      - question: What is 14 minus 4?
+        answers: ["10", "ten"]
+      - question: "What comes next? Monday, Tuesday, Wednesday.."
+        answer: "Thursday"
