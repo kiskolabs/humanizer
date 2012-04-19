@@ -5,20 +5,18 @@ en:
     questions:
       - question: Πόσο μας κάνουν 2 και 2;
         answers: ["4", "τέσσερα"]
-      - question: Jack and Jill went up the...
-        answer: hill
-      - question: What is the number before twelve?
-        answers: ["11", "eleven"]
-      - question: Five times two is what?
-        answers: ["10", "ten"]
-      - question: "Insert the next number in this sequence: 10, 11, 12, 13, 14, .."
-        answers: ["15", "fifteen"]
-      - question: "What is five times five?"
-        answers: ["25", "twenty-five"]
-      - question: "Ten divided by two is what?"
-        answers: ["5", "five"]
-      - question: What day comes after Monday?
-        answer: "tuesday"
+      - question: Ποιός αριθμός είναι πριν το 12;
+        answers: ["11", "έντεκα"]
+      - question: Πόσο μας κάνουν 5 φορές το 2;
+        answers: ["10", "δέκα"]
+      - question: "Εισάγετε τον επόμενο αριθμό στην ακολουθία: 10, 11, 12, 13, 14, .."
+        answers: ["15", "δεκαπέντε"]
+      - question: "Πόσο μας κάνουν 5x5;"
+        answers: ["25", "είκοσιπέντε"]
+      - question: "Πόσο μας κάνουν 10 δια δύο;"
+        answers: ["5", "πέντε"]
+      - question: Τι μέρα έχουμε μετά την Δευτέρα;
+        answer: "Τρίτη"
       - question: What is the last month of the year?
         answer: "december"
       - question: How many minutes are in an hour?
