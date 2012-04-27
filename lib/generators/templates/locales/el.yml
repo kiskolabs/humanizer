@@ -17,12 +17,12 @@ en:
         answers: ["5", "πέντε"]
       - question: Τι μέρα έχουμε μετά την Δευτέρα;
         answer: "Τρίτη"
-      - question: What is the last month of the year?
-        answer: "december"
-      - question: How many minutes are in an hour?
-        answers: ["60", "sixty"]
-      - question: What is the opposite of down?
-        answer: "up"
+      - question: Ποιός είναι ο τελευταίος μήνας του έτους;
+        answer: "δεκέμβριος"
+      - question: Πόσα λεπτά έχει η ώρα;
+        answers: ["60", "εξήντα"]
+      - question: Ποιό είναι το αντίθετο του κάτω;
+        answer: "πάνω"
       - question: What is the opposite of north?
         answer: "south"
       - question: What is the opposite of bad?
