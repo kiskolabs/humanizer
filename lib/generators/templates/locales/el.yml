@@ -1,4 +1,4 @@
-en:
+el:
   humanizer:
     validation:
       error: Μάλλον είστε μηχανή spamming και όχι άνθρωπος
@@ -23,19 +23,19 @@ en:
         answers: ["60", "εξήντα"]
       - question: Ποιό είναι το αντίθετο του κάτω;
         answer: "πάνω"
-      - question: What is the opposite of north?
-        answer: "south"
-      - question: What is the opposite of bad?
-        answer: "good"
-      - question: What is 4 times four?
-        answers: ["16", "sixteen"]
-      - question: What number comes after 20?
-        answers: ["21", "twenty-one"]
-      - question: What month comes before July?
+      - question: Ποιό είναι το αντίθετο του Βορρά;
+        answer: "Νότος"
+      - question: Ποιό είναι το αντίθετο του κακού;
+        answer: "καλό"
+      - question: Πόσο μας κάνουν 4 επί τέσσερα;
+        answers: ["16", "δεκαέξι"]
+      - question: Ποιός αριθμός είναι ακριβώς έπειτα απο το 20;
+        answers: ["21", "είκοσιένα"]
+      - question: Τι μήνα έχουμε πριν τον Ιούλιο;
         answer: "june"
-      - question: What is fifteen divided by three?
-        answer: ["five", "5"]
-      - question: What is 14 minus 4?
-        answers: ["10", "ten"]
-      - question: "What comes next? Monday, Tuesday, Wednesday.."
-        answer: "Thursday"
+      - question: Πόσο μας κάνουν 15 δια του 3;
+        answer: ["πέντε", "5"]
+      - question: Πόσο μας κάνουν 14 μείον 4;
+        answers: ["10", "δέκα"]
+      - question: "Τι μέρα ακολουθεί; Δευτέρα, Τρίτη, Τετάρτη.."
+        answer: "Πέμπτη"
