@@ -1,3 +1,8 @@
+### Humanizer 2.4.4 (2012-08-24)
+
+* Added translations: Chinese (Simplified) translation, Italian
+* Small bug fixes
+
 ### Humanizer 2.4.3 (2011-03-16)
 
 * Added translations: Polish.

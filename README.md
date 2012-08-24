@@ -73,12 +73,15 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 * Russian by [Shark](http://github.com/Serheo)
 * Spanish by [Juanjo Bazán](https://github.com/xuanxu)
 * Polish by [Maciek O](https://github.com/ohaleck)
+* Italian by [Alberto Vena](https://github.com/kennyadsl)
+* Chinese (Simplified) by [Crane Jin](https://github.com/cranej)
 
 ## Contributors
 
 * [Florian Bertholin](https://github.com/Arkan)
 * [seogrady](https://github.com/seogrady)
 * [yairgo](https://github.com/yairgo)
+* [woto](https://github.com/woto)
 
 ## CI Build Status
 
