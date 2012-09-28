@@ -85,4 +85,4 @@ Humanizer is licensed under the MIT License, for more details see the LICENSE fi
 
 ## CI Build Status
 
-[![Build Status](http://travis-ci.org/kiskolabs/humanizer.png)](http://travis-ci.org/kiskolabs/humanizer)
+[![Build Status](https://secure.travis-ci.org/kiskolabs/humanizer.png)](http://travis-ci.org/kiskolabs/humanizer)
