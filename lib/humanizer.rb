@@ -8,7 +8,7 @@ module Humanizer
   attr_writer :humanizer_question_id
 
   def humanizer_question
-    humanizer_questions[humanizer_question_id.to_i]["question"]
+    self.class.humanizer_questions[humanizer_question_id.to_i]["question"]
   end
   
   def humanizer_question_id
@@ -28,11 +28,13 @@ module Humanizer
   private
   
   def humanizer_questions
-    @humanizer_questions ||= I18n.translate("humanizer.questions")
-  end
+    puts "Instanse method `humanizer_questions` is deprecated and will be removed from Humanizer user Class Method `humanizer_questions` instead."
+    self.class.humanizer_questions
+  end  
+  
 
   def humanizer_question_ids
-    @humanizer_question_ids ||= (0...humanizer_questions.count).to_a
+    @humanizer_question_ids ||= (0...self.class.humanizer_questions.count).to_a
   end
 
   def random_humanizer_question_id
@@ -40,7 +42,7 @@ module Humanizer
   end
 
   def humanizer_answers_for_id(id)
-    question = humanizer_questions[id.to_i]
+    question = self.class.humanizer_questions[id.to_i]
     Array(question["answer"] || question["answers"]).map { |a| a.to_s.mb_chars.downcase }
   end
 
@@ -49,6 +51,15 @@ module Humanizer
   end
   
   module ClassMethods
+    def humanizer_questions
+      # Let humanizer_questions in memory as random sorting and random pick 20 items, 
+      # and it will reload and get new random sorting in next day
+      if @humanizer_questions_cache_date != Time.now.to_date
+        @humanizer_questions_cache_date = Time.now.to_date
+        @humanizer_questions = nil
+      end
+      @humanizer_questions ||= I18n.translate("humanizer.questions").sample(20).shuffle
+    end
     
     def require_human_on(validate_on, opts = {})
       opts[:on] = validate_on

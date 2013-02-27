@@ -2,6 +2,10 @@
 
 Humanizer is a very simple CAPTCHA method. It has a localized YAML file with questions and answers which is used to validate that the user is an actual human. Any model that includes ActiveModel::Validations should work. Our aim is to be database and mapper agnostic, so if it doesn't work for you, open an issue. Humanizer only works with Rails 3.
 
+## NOTIES
+
+The questions with random pickup 20 items from yaml file, and get a random sorting. This will keep a day, and get new random question in next day. So you need add more question in you YAML file to protect it hard to crack.
+
 ## Installation
 
 1. `gem install humanizer`
