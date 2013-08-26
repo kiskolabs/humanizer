@@ -1,43 +1,43 @@
 zh-CN:
   humanizer:
     validation:
-      error: '你不是人类' 
+      error: '你不是人类'
     questions:
       - question: 二加二等于几?
         answers: ["4", "four", "四"]
-      - question: 门前大桥下游过一群__ 
-        answer: 鸭 
+      - question: 门前大桥下游过一群__
+        answer: 鸭
       - question: 十二前面是什么数字?
         answers: ["11", "eleven", "十一"]
       - question: 五乘以二等于几?
         answers: ["10", "ten", "十"]
       - question: "写出下一个数字: 10, 11, 12, 13, 14, .."
-        answers: ["15", "fifteen","十五"]
+        answers: ["15", "fifteen", "十五"]
       - question: "五乘以五等于几?"
         answers: ["25", "twenty-five", "二十五"]
       - question: "十除以二等于几?"
         answers: ["5", "five", "五"]
       - question: 星期一过完是星期几?
-        answer: ["tuesday","周二", "二"]
+        answer: ["tuesday", "周二", "二"]
       - question: 一年的最后一个月是几月?
-        answer: ["december","十二月","十二"]
+        answer: ["december", "十二月", "十二"]
       - question: 一小时有多少分钟?
         answers: ["60", "sixty", "六十"]
       - question: 下的反义词是什么?
-        answer: ["up","上"]
+        answer: ["up", "上"]
       - question: 北的反义词是什么?
-        answer: ["south","南"]
+        answer: ["south", "南"]
       - question: 坏的反义词是什么?
-        answer: ["good","好"]
+        answer: ["good", "好"]
       - question: 四乘以4是多少?
         answers: ["16", "sixteen", "十六"]
       - question: 20后面的数字是?
         answers: ["21", "twenty-one", "二十一"]
       - question: 七月前面是几月?
-        answer: ["june","六月"]
+        answer: ["june", "六月"]
       - question: 十五除以三是多少?
         answer: ["five", "5", "五"]
       - question: 十四减四等于多少?
         answers: ["10", "ten", "十"]
-      - question: "周一,周二 ,周三, __"
-        answer: ["Thursday","周四"]
+      - question: "周一, 周二, 周三, __"
+        answer: ["Thursday", "周四"]
