@@ -50,8 +50,8 @@ module Humanizer
   
   module ClassMethods
     
-    def require_human_on(validate_on, opts = {})
-      opts[:on] = validate_on
+    def require_human_on(validate_on = nil, opts = {})
+      opts[:on] = validate_on if validate_on
       validate :humanizer_check_answer,  opts
     end
     
