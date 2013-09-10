@@ -1,0 +1,43 @@
+zh-TW:
+  humanizer:
+    validation:
+      error: "你不是人類"
+    questions:
+      - question: "二加二等於多少？"
+        answers: ["4", "４", "四"]
+      - question: "床前明月__"
+        answer: "光"
+      - question: "十二前面是什麼數字？"
+        answers: ["11", "eleven", "十一"]
+      - question: "五乘二等於多少？"
+        answers: ["10", "ten", "十"]
+      - question: "寫出下一個數字： 10, 11, 12, 13, 14, .."
+        answers: ["15", "fifteen", "十五"]
+      - question: "五乘五等於多少？"
+        answers: ["25", "twenty-five", "二十五"]
+      - question: "十除以二等於多少？"
+        answers: ["5", "five", "五"]
+      - question: "星期一過完是星期幾？"
+        answer: ["tuesday", "週二", "二", "星期二"]
+      - question: "一年的最後一個月是幾月？"
+        answer: ["december", "十二月", "十二", "12"]
+      - question: "一小時有幾分鐘？"
+        answers: ["60", "sixty", "六十"]
+      - question: "下的相反詞是？"
+        answer: ["up", "上"]
+      - question: "北的相反詞是？"
+        answer: ["south", "南"]
+      - question: "壞的相反詞是？"
+        answer: ["good", "好"]
+      - question: "4 的四倍是多少？"
+        answers: ["16", "sixteen", "十六"]
+      - question: "20 的下一個數字是？"
+        answers: ["21", "twenty-one", "二十一"]
+      - question: "七月前面是幾月？"
+        answer: ["june", "六月"]
+      - question: "十五除以三是多少？"
+        answer: ["five", "5", "五"]
+      - question: "十四減四是多少？"
+        answers: ["10", "ten", "十"]
+      - question: "周一, 周二, 周三, ____"
+        answer: ["Thursday", "周四"]
