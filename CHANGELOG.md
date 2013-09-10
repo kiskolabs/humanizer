@@ -1,3 +1,8 @@
+### Humanizer 2.5.0 (2013-09-10)
+
+* Added translations: Greek and zh-TW
+* Support models without database backing (41773bc)
+
 ### Humanizer 2.4.4 (2012-08-24)
 
 * Added translations: Chinese (Simplified) translation, Italian
