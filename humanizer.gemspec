@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project         = "humanizer"
 
-  s.add_development_dependency "bundler", "~> 1.1.3"
+  s.add_development_dependency "bundler", "> 1.1.3"
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec", "~> 2.11.0"
   s.add_development_dependency "activemodel", "~> 3.0.0"
