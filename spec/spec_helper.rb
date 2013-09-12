@@ -1,6 +1,6 @@
-require "bundler"
+#require "bundler"
   
-Bundler.setup
+#Bundler.setup
 
 require "active_model"
 require "rspec"
