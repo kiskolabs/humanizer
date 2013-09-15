@@ -12,8 +12,10 @@ gem 'humanizer'
 
 Bundle and run the generator in terminal:
 
-    bundle
-    rails g humanizer
+```sh
+bundle
+rails g humanizer
+```
 
 ## Advanced Installation
 
@@ -34,7 +36,7 @@ end
 
 2. Ask the question in the form, example:
 
-```ruby
+```erb
 <%= f.label :humanizer_answer, @model.humanizer_question %>
 <%= f.text_field :humanizer_answer %>
 <%= f.hidden_field :humanizer_question_id %>
