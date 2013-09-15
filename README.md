@@ -1,11 +1,19 @@
 # Humanizer
 
-Humanizer is a very simple CAPTCHA method. It has a localized YAML file with questions and answers which is used to validate that the user is an actual human. Any model that includes ActiveModel::Validations should work. Our aim is to be database and mapper agnostic, so if it doesn't work for you, open an issue. Humanizer only works with Rails 3.
+Humanizer is a very simple CAPTCHA method. It has a localized YAML file with questions and answers which is used to validate that the user is an actual human. Any model that includes ActiveModel::Validations should work. Our aim is to be database and mapper agnostic, so if it doesn't work for you, open an issue. Humanizer works with Rails 3 and 4.
 
 ## Installation
 
-1. `gem install humanizer`
-2. `rails g humanizer`
+Add `humanizer` to your Gemfile:
+
+```ruby
+gem 'humanizer'
+```
+
+Bundle and run the generator in terminal:
+
+    bundle
+    rails g humanizer
 
 ## Advanced Installation
 
@@ -17,18 +25,24 @@ Humanizer is a very simple CAPTCHA method. It has a localized YAML file with que
 
 1. In your model, include Humanizer and add the #require_human_on method, example:
 
-        class User < ActiveRecord::Base
-          include Humanizer
-          require_human_on :create
-        end
+```ruby
+class User < ActiveRecord::Base
+  include Humanizer
+  require_human_on :create
+end
+```
 
 2. Ask the question in the form, example:
 
-        <%= f.label :humanizer_answer, @model.humanizer_question %>
-        <%= f.text_field :humanizer_answer %>
-        <%= f.hidden_field :humanizer_question_id %>
+```ruby
+<%= f.label :humanizer_answer, @model.humanizer_question %>
+<%= f.text_field :humanizer_answer %>
+<%= f.hidden_field :humanizer_question_id %>
+```
 
 3. If you are using attr_accessible, remember to whitelist `:humanizer_answer` and `:humanizer_question_id`.
+
+4. If you are using strong_parameters, remember to permit `:humanizer_answer` and `:humanizer_question_id`.
 
 ## Configuration
 
@@ -42,8 +56,10 @@ You might want to skip the humanizer validations on your tests or rails console.
 
 You can just have a simple attribute on your model and use it to bypass the validation. Here's an example:
 
-    attr_accessor :bypass_humanizer
-    require_human_on :create, :unless => :bypass_humanizer
+```ruby
+attr_accessor :bypass_humanizer
+require_human_on :create, :unless => :bypass_humanizer
+```
 
 Now when bypass_humanizer is true, validation will be skipped.
 
@@ -53,8 +69,10 @@ In case you want to give your users the option to change the question, there's a
 
 To make sure the current question doesn't get asked again, you can pass the current question id to the method. For example:
 
-    @user.change_humanizer_question(params[:user][:humanizer_question_id])
-          
+```ruby
+@user.change_humanizer_question(params[:user][:humanizer_question_id])
+```
+
 ## Live sites
 
 * [ArcticStartup.com](http://arcticstartup.com/) - sign up form
