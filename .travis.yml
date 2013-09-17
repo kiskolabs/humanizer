@@ -7,7 +7,7 @@ rvm:
   - ree
 gemfile:
   - Gemfile
-  - gemfiles/Gemfile.rails-3.2.x
-  - gemfiles/Gemfile.rails-4.0.x
+  - Gemfile.rails-3.2.x
+  - Gemfile.rails-4.0.x
 notifications:
   disable: true
