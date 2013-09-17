@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Humanizer by kiskolabs</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Humanizer</h1>
+        <p>A very simple captcha with Rails 3 and 4 support</p>
+
+        <p class="view"><a href="https://github.com/kiskolabs/humanizer">View the Project on GitHub <small>kiskolabs/humanizer</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/kiskolabs/humanizer/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kiskolabs/humanizer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/kiskolabs/humanizer">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="humanizer" class="anchor" href="#humanizer"><span class="octicon octicon-link"></span></a>Humanizer</h1>
+
+<p>Humanizer is a very simple CAPTCHA method. It has a localized YAML file with questions and answers which is used to validate that the user is an actual human. Any model that includes ActiveModel::Validations should work. Our aim is to be database and mapper agnostic, so if it doesn't work for you, open an issue. Humanizer works with Rails 3 and 4.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add <code>humanizer</code> to your Gemfile:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="n">gem</span> <span class="s1">'humanizer'</span>
+</pre></div>
+
+<p>Bundle and run the generator in terminal:</p>
+
+<div class="highlight highlight-sh"><pre>bundle
+rails g humanizer
+</pre></div>
+
+<h2>
+<a name="advanced-installation" class="anchor" href="#advanced-installation"><span class="octicon octicon-link"></span></a>Advanced Installation</h2>
+
+<ul>
+<li>Install all locales: <code>rails g humanizer --all-locales</code>
+</li>
+<li>Show available locales: <code>rails g humanizer --show-locales</code>
+</li>
+<li>Install selected locales: <code>rails g humanizer en fi de</code>
+</li>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li>In your model, include Humanizer and add the #require_human_on method, example:</li>
+</ol><div class="highlight highlight-ruby"><pre><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
+  <span class="kp">include</span> <span class="no">Humanizer</span>
+  <span class="n">require_human_on</span> <span class="ss">:create</span>
+<span class="k">end</span>
+</pre></div>
+
+<ol>
+<li>Ask the question in the form, example:</li>
+</ol><div class="highlight highlight-erb"><pre><span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">label</span> <span class="ss">:humanizer_answer</span><span class="p">,</span> <span class="vi">@model</span><span class="o">.</span><span class="n">humanizer_question</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">text_field</span> <span class="ss">:humanizer_answer</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">hidden_field</span> <span class="ss">:humanizer_question_id</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+
+<ol>
+<li><p>If you are using attr_accessible, remember to whitelist <code>:humanizer_answer</code> and <code>:humanizer_question_id</code>.</p></li>
+<li><p>If you are using strong_parameters, remember to permit <code>:humanizer_answer</code> and <code>:humanizer_question_id</code>.</p></li>
+</ol><h2>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<p>Default translations can be found in config/locales/</p>
+
+<p>You might want to add/change question and answer pairs. This can be easily done by adding/modifying entries in locales file.</p>
+
+<h2>
+<a name="skipping-validation" class="anchor" href="#skipping-validation"><span class="octicon octicon-link"></span></a>Skipping validation</h2>
+
+<p>You might want to skip the humanizer validations on your tests or rails console.</p>
+
+<p>You can just have a simple attribute on your model and use it to bypass the validation. Here's an example:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="kp">attr_accessor</span> <span class="ss">:bypass_humanizer</span>
+<span class="n">require_human_on</span> <span class="ss">:create</span><span class="p">,</span> <span class="ss">:unless</span> <span class="o">=&gt;</span> <span class="ss">:bypass_humanizer</span>
+</pre></div>
+
+<p>Now when bypass_humanizer is true, validation will be skipped.</p>
+
+<h2>
+<a name="reloading-questions" class="anchor" href="#reloading-questions"><span class="octicon octicon-link"></span></a>Reloading questions</h2>
+
+<p>In case you want to give your users the option to change the question, there's a #change_humanizer_question method to help you.</p>
+
+<p>To make sure the current question doesn't get asked again, you can pass the current question id to the method. For example:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="vi">@user</span><span class="o">.</span><span class="n">change_humanizer_question</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:user</span><span class="o">][</span><span class="ss">:humanizer_question_id</span><span class="o">]</span><span class="p">)</span>
+</pre></div>
+
+<h2>
+<a name="live-sites" class="anchor" href="#live-sites"><span class="octicon octicon-link"></span></a>Live sites</h2>
+
+<ul>
+<li>
+<a href="http://arcticstartup.com/">ArcticStartup.com</a> - sign up form</li>
+<li>
+<a href="http://paspartout.com/">Paspartout</a> - sign up form</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Humanizer is licensed under the MIT License, for more details see the LICENSE file.</p>
+
+<h2>
+<a name="questionanswer-translations" class="anchor" href="#questionanswer-translations"><span class="octicon octicon-link"></span></a>Question/Answer Translations</h2>
+
+<ul>
+<li>English, Finnish and Portuguese translations by <a href="http://kiskolabs.com/">Kisko Labs</a>
+</li>
+<li>German by <a href="http://github.com/svoop">Sven Schwyn</a>
+</li>
+<li>Dutch by <a href="http://github.com/joren">Joren De Groof</a>
+</li>
+<li>Brazilian Portuguese by <a href="http://github.com/britto">Britto</a>
+</li>
+<li>Russian by <a href="http://github.com/Serheo">Shark</a>
+</li>
+<li>Spanish by <a href="https://github.com/xuanxu">Juanjo Bazán</a>
+</li>
+<li>Polish by <a href="https://github.com/ohaleck">Maciek O</a>
+</li>
+<li>Italian by <a href="https://github.com/kennyadsl">Alberto Vena</a>
+</li>
+<li>Chinese (Simplified) by <a href="https://github.com/cranej">Crane Jin</a>
+</li>
+</ul><h2>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<ul>
+<li><a href="https://github.com/Arkan">Florian Bertholin</a></li>
+<li><a href="https://github.com/seogrady">seogrady</a></li>
+<li><a href="https://github.com/yairgo">yairgo</a></li>
+<li><a href="https://github.com/woto">woto</a></li>
+</ul><h2>
+<a name="ci-build-status" class="anchor" href="#ci-build-status"><span class="octicon octicon-link"></span></a>CI Build Status</h2>
+
+<p><a href="https://travis-ci.org/kiskolabs/humanizer"><img src="https://travis-ci.org/kiskolabs/humanizer.png?branch=master" alt="Build Status"></a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/kiskolabs">kiskolabs</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
