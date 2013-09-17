@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/kiskolabs/humanizer"
   s.summary     = "A really simple captcha solution"
   s.description = "reCAPTCHA was too much for us, so we created this. Simplest captcha ever."
+  s.license     = "MIT"
 
   s.required_rubygems_version = ">= 1.3.6"
 
