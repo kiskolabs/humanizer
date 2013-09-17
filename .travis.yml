@@ -5,5 +5,9 @@ rvm:
   - 2.0.0
   - jruby-19mode
   - ree
+gemfile:
+  - Gemfile
+  - gemfiles/Gemfile.rails-3.2.x
+  - gemfiles/Gemfile.rails-4.0.x
 notifications:
   disable: true
