@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "bundler"
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec", "~> 2.11.0"
-  s.add_development_dependency "activemodel", "~> 3.0.0"
+  s.add_development_dependency "activemodel", ">= 3.0.0"
 
   s.files        = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md", "lib/generators/**/*.*"]
   s.require_path = 'lib'
