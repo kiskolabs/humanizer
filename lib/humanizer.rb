@@ -8,7 +8,7 @@ module Humanizer
   attr_writer :humanizer_question_id
 
   def humanizer_question
-    humanizer_questions[humanizer_question_id.to_i]["question"]
+    humanizer_questions[humanizer_question_id.to_i].stringify_keys["question"]
   end
   
   def humanizer_question_id
@@ -40,7 +40,7 @@ module Humanizer
   end
 
   def humanizer_answers_for_id(id)
-    question = humanizer_questions[id.to_i]
+    question = humanizer_questions[id.to_i].stringify_keys
     Array(question["answer"] || question["answers"]).map { |a| a.to_s.mb_chars.downcase }
   end
 
