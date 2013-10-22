@@ -4,16 +4,9 @@ rvm:
   - 1.9.3
   - 2.0.0
   - jruby-19mode
-  - ree
 gemfile:
   - Gemfile
   - Gemfile.rails-3.2.x
   - Gemfile.rails-4.0.x
-matrix:
-  exclude:
-    - rvm: ree
-      gemfile: Gemfile
-    - rvm: ree
-      gemfile: Gemfile.rails-4.0.x
 notifications:
   disable: true
