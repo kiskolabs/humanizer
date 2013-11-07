@@ -13,9 +13,9 @@ nl:
         answers: ["10", "tien"]
       - question: "Vul het volgende nummer in deze rij aan: 10, 11, 12, 13, 14, .."
         answers: ["15", "vijftien"]
-      - question: "Wat is vijf maail vijf?"
+      - question: "Wat is vijf maal vijf?"
         answers: ["25", "vijfentwintig"]
-      - question: "Tein gedeeld door twee is hoeveel?"
+      - question: "Tien gedeeld door twee is hoeveel?"
         answers: ["5", "vijf"]
       - question: Welke dag komt er na maandag?
         answer: "dinsdag"
@@ -23,11 +23,11 @@ nl:
         answer: "december"
       - question: Hoeveel minuten zitten er in een uur?
         answers: ["60", "zestig"]
-      - question: Wat is het omgkeerde van benden?
+      - question: Wat is het tegenovergestelde van beneden?
         answer: "boven"
-      - question: Wat is het omgekeerde van zuid?
+      - question: Wat is het tegenovergestelde van zuid?
         answer: ["noord", "noorden"]
-      - question: Wat is het omgekeerde van slecht?
+      - question: Wat is het tegenovergestelde van slecht?
         answer: "goed"
       - question: Hoeveel is 4 maal vier?
         answers: ["16", "zestien"]
