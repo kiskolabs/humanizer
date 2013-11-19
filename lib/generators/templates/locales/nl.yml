@@ -15,7 +15,7 @@ nl:
         answers: ["15", "vijftien"]
       - question: "Wat is vijf maail vijf?"
         answers: ["25", "vijfentwintig"]
-      - question: "Tein gedeeld door twee is hoeveel?"
+      - question: "Tien gedeeld door twee is hoeveel?"
         answers: ["5", "vijf"]
       - question: Welke dag komt er na maandag?
         answer: "dinsdag"
