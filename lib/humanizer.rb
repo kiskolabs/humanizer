@@ -26,9 +26,19 @@ module Humanizer
   end
 
   private
-  
+
   def humanizer_questions
-    @humanizer_questions ||= I18n.translate("humanizer.questions")
+    @humanizer_questions ||= begin
+      questions = I18n.translate("humanizer.questions")
+      # Poor man's HashWithIndifferentAccess
+      questions.default_proc = proc do |h, k|
+         case k
+           when String then sym = k.to_sym; h[sym] if h.key?(sym)
+           when Symbol then str = k.to_s; h[str] if h.key?(str)
+         end
+      end
+      questions
+    end
   end
 
   def humanizer_question_ids
