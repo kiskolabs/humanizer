@@ -31,11 +31,13 @@ module Humanizer
     @humanizer_questions ||= begin
       questions = I18n.translate("humanizer.questions")
       # Poor man's HashWithIndifferentAccess
-      questions.default_proc = proc do |h, k|
-         case k
-           when String then sym = k.to_sym; h[sym] if h.key?(sym)
-           when Symbol then str = k.to_s; h[str] if h.key?(str)
-         end
+      questions.map do |question|
+        question.default_proc = proc do |h, k|
+           case k
+             when String then sym = k.to_sym; h[sym] if h.key?(sym)
+             when Symbol then str = k.to_s; h[str] if h.key?(str)
+           end
+        end
       end
       questions
     end
