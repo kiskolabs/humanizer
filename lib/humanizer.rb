@@ -29,7 +29,7 @@ module Humanizer
 
   def humanizer_questions
     @humanizer_questions ||= begin
-      questions = I18n.translate("humanizer.questions")
+      questions = I18n.translate!("humanizer.questions")
       # Poor man's HashWithIndifferentAccess
       questions.map do |question|
         question.default_proc = proc do |h, k|

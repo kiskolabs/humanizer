@@ -11,9 +11,9 @@ describe Humanizer do
   before(:each) do
     @user = User.new
   end
-    
+
   context "when mixed-in with a class" do
-    
+
     it "adds questions and answers to the instances" do
       questions = @user.send(:humanizer_questions)
       questions.count.should == 2
@@ -22,9 +22,17 @@ describe Humanizer do
       questions[1]["question"].should == "Jack and Jill went up the..."
       questions[1]["answer"].should == "hill"
     end
-    
+
+    context "when question localizations can't be found" do
+      it "will raise an exception" do
+        with_locale :sv do
+          expect { @user.send(:humanizer_questions) }.to raise_error(I18n::MissingTranslationData)
+        end
+      end
+    end
+
   end
-  
+
   context "question" do
     
     context "id" do
