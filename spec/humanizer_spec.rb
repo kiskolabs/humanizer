@@ -108,8 +108,8 @@ describe Humanizer do
     context "when passing in a value" do
 
       before(:each) do
-        questions = mock(:count => 4)
-        @user.stub!(:humanizer_questions).and_return(questions)
+        questions = double(:count => 4)
+        @user.stub(:humanizer_questions).and_return(questions)
         @user.send(:humanizer_question_ids).should == [0,1,2,3]
       end
 
