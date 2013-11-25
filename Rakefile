@@ -1,14 +1,12 @@
-require "bundler"
-Bundler.setup
+# encoding: UTF-8
+require "bundler/gem_tasks"
 
+require "rake"
+require "rake/task"
+
+require "rspec/core"
 require "rspec/core/rake_task"
+
 RSpec::Core::RakeTask.new(:spec)
 
-gemspec = eval(File.read("humanizer.gemspec"))
-
-task :build => "#{gemspec.full_name}.gem"
-
-file "#{gemspec.full_name}.gem" => gemspec.files + ["humanizer.gemspec"] do
-  system "gem build humanizer.gemspec"
-  system "gem install humanizer-#{Humanizer::VERSION}.gem"
-end
+task :default => :spec
