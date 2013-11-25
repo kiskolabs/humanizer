@@ -1,3 +1,9 @@
+### Humanizer 2.6.0 (2013-11-25)
+
+* Raise an exception of the translations are missing
+* Make translation lookups work with both strings and symbols
+* Improvements to the dutch translations
+
 ### Humanizer 2.5.0 (2013-09-10)
 
 * Added translations: Greek and zh-TW
