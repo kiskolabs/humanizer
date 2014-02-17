@@ -1,3 +1,7 @@
+### Humanizer 2.6.1 (2014-02-17)
+
+* Fixed typo in the Russian translations
+
 ### Humanizer 2.6.0 (2013-11-25)
 
 * Raise an exception of the translations are missing
