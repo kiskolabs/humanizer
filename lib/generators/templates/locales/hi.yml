@@ -1,0 +1,43 @@
+hi:
+  humanizer:
+    validation:
+      error: आप एक इंसान नहीं हैं
+    questions:
+      - question: दो और दो​​? ?
+        answers: ["चार", "4", "four"]
+      - question: जैक और जिल कहाँ चढ़ गए ...
+        answer: ["पहाड़ी", "hill"]
+      - question: बारह से पहले नंबर क्या है?
+        answers: ["ग्यारह", "11", "eleven"]
+      - question: पांच बार दो क्या है?
+        answers: ["दस", "10", "ten"]
+      - question: "इस क्रम में अगले नंबर होगा: 10, 11, 12, 13, 14, .."
+        answers: ["पंद्रह", "15", "fifteen"]
+      - question: "पांच बार पांच क्या है?"
+        answers: ["पच्चीस", "25", "twenty-five"]
+      - question: "दो से विभाजित दस क्या है?"
+        answers: ["पांच", "5", "five"]
+      - question: सोमवार के बाद आता है?
+        answer: ["मंगलवार", "tuesday"]
+      - question: वर्ष का आखिरी महीना है?
+        answer: ["दिसम्बर", "december"]
+      - question: एक घंटे में कितने मिनट हैं?
+        answers: ["साठ", "60", "sixty"]
+      - question: नीचे के विपरीत क्या है?
+        answer: ["ऊपर", "up"]
+      - question: उत्तर दिशा के विपरीत क्या है?
+        answer: ["दक्षिण", "south"]
+      - question: बुरा के विपरीत क्या है?
+        answer: ["अच्छा", "good"]
+      - question: 4 बार चार क्या है?
+        answers: ["सोलह", "16", "sixteen"]
+      - question: संख्या 20 के बाद आता है?
+        answers: ["इक्कीस", "21", "twenty-one"]
+      - question: माह जुलाई से पहले आता है?
+        answer: ["जून", "june"]
+      - question: पंद्रह को तीन से विभाजित करना ?
+        answer: ["पांच", "five", "5"]
+      - question: 14 कम 4 क्या है?
+        answers: ["दस", "10", "ten"]
+      - question: "आगे क्या आता है ? सोमवार, मंगलवार, बुधवार.."
+        answer: ["गुरुवार", "Thursday"]
