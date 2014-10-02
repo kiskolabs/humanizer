@@ -1,0 +1,43 @@
+nb:
+  humanizer:
+    validation:
+      error: Vi tror ikke at du er et menneske
+    questions:
+      - question: Hva er To pluss to?
+        answers: ["4", "fire"]
+      - question: Jack og Jill gikk opp en...
+        answer: ås
+      - question: Hva er nummeret før tallet tolv?
+        answers: ["11", "elleve"]
+      - question: Hva er Fem ganger to?
+        answers: ["10", "ti"]
+      - question: "Sett inn neste nummer i denne sekvensen: 10, 11, 12, 13, 14, .."
+        answers: ["15", "femten"]
+      - question: "Hva er fem ganger fem"
+        answers: ["25", "tjuefem"]
+      - question: "Ti delt på to er hva?"
+        answers: ["5", "fem"]
+      - question: Hvilken dag kommer etter mandag?
+        answer: "tirsdag"
+      - question: Hva er den siste måneden i året?
+        answer: "desember"
+      - question: Hvor mange minutter er det i en time?
+        answers: ["60", "seksti"]
+      - question: Hva er det motsatte av ned?
+        answer: "opp"
+      - question: Hva er det motsatte av nord?
+        answer: "sør"
+      - question: Hva er det motsatte av fin?
+        answer: "stygg"
+      - question: Hva er fire ganger fire?
+        answers: ["16", "seksten"]
+      - question: Hvilket nummer kommer etter 20?
+        answers: ["21", "tjueen"]
+      - question: Hvilken måned kommer før juli?
+        answer: "june"
+      - question: Hva er femten delt på tre?
+        answer: ["fem", "5"]
+      - question: Hva er 14 minus 4?
+        answers: ["10", "ten"]
+      - question: "Hva kommer neste mandag, tirsdag, onsdag .."
+        answer: "Torsdag"
