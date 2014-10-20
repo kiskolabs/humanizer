@@ -19,7 +19,7 @@ fi:
         answers: ["5", "viisi"]
       - question: Maanantaita seuraava päivä on?
         answer: "tiistai"
-      - question: Mikä on vuoden viimeinen päivä?
+      - question: Mikä on vuoden viimeinen kuukausi?
         answer: "joulukuu"
       - question: Kuinka monta minuuttia on tunnissa?
         answers: ["60", "kuusikymmentä"]
