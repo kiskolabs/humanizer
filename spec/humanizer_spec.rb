@@ -95,6 +95,18 @@ describe Humanizer do
       @user.humanizer_answer = "slope"
       @user.humanizer_correct_answer?.should be_false
     end
+
+    it "can have extra spaces in begin and end" do
+      @user.humanizer_question_id = 0
+      @user.humanizer_answer = "4"
+      @user.humanizer_correct_answer?.should be_true
+      @user.humanizer_answer = " 4"
+      @user.humanizer_correct_answer?.should be_true
+      @user.humanizer_answer = "4 "
+      @user.humanizer_correct_answer?.should be_true
+      @user.humanizer_answer = " 4 "
+      @user.humanizer_correct_answer?.should be_true
+    end
     
   end
   
