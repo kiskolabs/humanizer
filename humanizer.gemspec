@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.name        = "humanizer"
   s.version     = Humanizer::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Antti Akonniemi", "Joao Carlos Cardoso"]
-  s.email       = ["antti@kiskolabs.com", "joao@kiskolabs.com"]
+  s.authors     = ["Antti Akonniemi", "Joao Carlos Cardoso", "Matias Korhonen", "Vesa Vänskä"]
+  s.email       = ["antti@kiskolabs.com", "joao@kiskolabs.com", "matias@kiskolabs.com", "vesa@kiskolabs.com"]
   s.homepage    = "http://github.com/kiskolabs/humanizer"
   s.summary     = "A really simple captcha solution"
   s.description = "reCAPTCHA was too much for us, so we created this. Simplest captcha ever."
