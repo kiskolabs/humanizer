@@ -1,3 +1,11 @@
+### Humanizer 2.6.2 (2014-11-25)
+
+* Added stripping of whitespace before comparing answers
+* Added translations: Hindi and Norwegian
+* Fixed typo in the Russian translations
+* Fixed incorrect answer in the Finnish translations
+* Added more variations for German translations
+
 ### Humanizer 2.6.1 (2014-02-17)
 
 * Fixed typo in the Russian translations
