@@ -12,11 +12,11 @@ de:
       - question: "Fünf mal zwei ergibt?"
         answers: ["10", "zehn"]
       - question: "Die nächste Zahl der Serie: 10, 11, 12, 13, 14, .."
-        answers: ["15", "fünfzehn"]
+        answers: ["15", "fünfzehn", "fuenfzehn"]
       - question: "Wieviel ist fünf mal fünf?"
         answers: ["25", "fünfundzwanzig"]
       - question: "Zehn geteilt durch zwei ist?"
-        answers: ["5", "fünf"]
+        answers: ["5", "fünf", "fuenf"]
       - question: "Welcher Tag folgt auf den Montag?"
         answer: "dienstag"
       - question: "Wie lautet der letzte Monat des Jahres?"
@@ -26,7 +26,7 @@ de:
       - question: "Was ist das Gegenteil von oben?"
         answer: "unten"
       - question: "Was ist das Gegenteil von Norden?"
-        answer: "süden"
+        answer: ["süden", "sueden"]
       - question: "Was ist das Gegenteil von schlecht?"
         answer: "gut"
       - question: "Wieviel ist 4 mal vier?"
@@ -36,7 +36,7 @@ de:
       - question: "Welcher Monat kommt vor dem Juli?"
         answer: "juni"
       - question: "Wieviel ist fünfzehn geteilt durch drei?"
-        answer: ["fünf", "5"]
+        answer: ["5", "fünf", "fuenf"]
       - question: "Wieviel ist 14 minus 4?"
         answers: ["10", "zehn"]
       - question: "Was folgt als nächstes? Montag, Dienstag, Mittwoch, ..."
