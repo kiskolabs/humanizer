@@ -1,0 +1,41 @@
+da:
+  humanizer:
+    validation:
+      error: Venligst bevise, at du ikke er en robot
+    questions:
+      - question: To plus to?
+        answers: ["4", "fire"]
+      - question: Hvilket nummer kommer før tolv?
+        answers: ["11", "elleve"]
+      - question: Hvad er fem gange to?
+        answers: ["10", "ti"]
+      - question: "Indsæt det næste nummer i sekvensen: 10, 11, 12, 13, 14, .."
+        answers: ["15", "femten"]
+      - question: "Hvad er fem gange fem?"
+        answers: ["25", "fem og tyve", "femogtyve"]
+      - question: "Hvad er ti divideret med to?"
+        answers: ["5", "fem"]
+      - question: Hvad hedder dagen der kommer efter mandag?
+        answer: "tirsdag"
+      - question: Hvad er den sidste måned i året?
+        answer: "december"
+      - question: Hvor mange minutter er der i en time?
+        answers: ["60", "tres"]
+      - question: Hvad er det modsatte af ned?
+        answer: "op"
+      - question: Hvad er det modsatte af nord?
+        answer: "syd"
+      - question: Hvad er det modsatte af dårlig?
+        answer: "god"
+      - question: Hvad er fire gange fire?
+        answers: ["16", "seksten"]
+      - question: Hvilket nummer kommer efter tyve?
+        answers: ["21", "enogtyve"]
+      - question: Hvilken måned kommer før juli?
+        answer: "juni"
+      - question: Hvad er femten divideret med tre?
+        answer: ["fem", "5"]
+      - question: Hvad er 14 minus 4?
+        answers: ["10", "ti"]
+      - question: "Hvad er den næste? Mandag, tirsdag, onsdag..."
+        answer: "torsdag"
