@@ -1,7 +1,7 @@
 da:
   humanizer:
     validation:
-      error: Venligst bevise, at du ikke er en robot
+      error: Bevis venligst, at du ikke er en robot
     questions:
       - question: To plus to?
         answers: ["4", "fire"]
@@ -15,11 +15,11 @@ da:
         answers: ["25", "fem og tyve", "femogtyve"]
       - question: "Hvad er ti divideret med to?"
         answers: ["5", "fem"]
-      - question: Hvad hedder dagen der kommer efter mandag?
+      - question: Hvad hedder dagen, der kommer efter mandag?
         answer: "tirsdag"
       - question: Hvad er den sidste måned i året?
         answer: "december"
-      - question: Hvor mange minutter er der i en time?
+      - question: Hvor mange minutter er der på en time?
         answers: ["60", "tres"]
       - question: Hvad er det modsatte af ned?
         answer: "op"
