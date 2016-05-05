@@ -31,11 +31,11 @@ sv:
         answers: ["16", "sexton"]
       - question: "Vilket nummer kommer efter 20?"
         answers: ["21", "tjugioett"]
-      - question: "Vilken månad kommer före juni?"
+      - question: "Vilken månad kommer före juli?"
         answer: "juni"
       - question: "Vad är 15 delat på tre?"
         answer: ["fem", "5"]
       - question: "Vad är fjorton minus 4?"
         answers: ["10", "tio"]
       - question: "Vad kommer härnäst? Måndag, Tisdag, Onsdag..?"
-        answer: "Torsdag"
+        answer: "torsdag"
