@@ -25,7 +25,7 @@ describe Humanizer do
 
     context "when question localizations can't be found" do
       it "will raise an exception" do
-        I18n.with_locale :sv do
+        I18n.with_locale :empty do
           expect { @user.send(:humanizer_questions) }.to raise_error(I18n::MissingTranslationData)
         end
       end
