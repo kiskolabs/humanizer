@@ -49,7 +49,7 @@ module Humanizer
   end
 
   def random_humanizer_question_id
-    humanizer_question_ids[rand(humanizer_question_ids.count)]
+    humanizer_question_ids.sample
   end
 
   def humanizer_answers_for_id(id)
