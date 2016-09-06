@@ -1,0 +1,41 @@
+sv:
+  humanizer:
+    validation:
+      error: "Du är inte en människa"
+    questions:
+      - question: "Två plus två?"
+        answers: ["4", "fyra"]
+      - question: "Vilket nummer kommer före tolv?"
+        answers: ["11", "elva"]
+      - question: "Vad är fem gånger två?"
+        answers: ["10", "tio"]
+      - question: "Vilket nummer kommer härnäst: 10, 11, 12, 13, 14, ..?"
+        answers: ["15", "femton"]
+      - question: "Vad är fem gånger fem?"
+        answers: ["25", "tjugiofem"]
+      - question: "Vad är tio delat på två?"
+        answers: ["5", "five"]
+      - question: "Vilken dag kommer efter måndag?"
+        answer: "tisdag"
+      - question: "Vilken är årets sista månad?"
+        answer: "december"
+      - question: "Hur många minuter går det på en timme?"
+        answers: ["60", "sextio"]
+      - question: "Vad är motsatsen till ner?"
+        answer: "upp"
+      - question: "Vad är motsatsen till norr?"
+        answer: ["söder", "syd"]
+      - question: "Vad är motsatsen till ond?"
+        answer: ["god", "snäll"]
+      - question: "Vad är 4 gånger fyra?"
+        answers: ["16", "sexton"]
+      - question: "Vilket nummer kommer efter 20?"
+        answers: ["21", "tjugioett"]
+      - question: "Vilken månad kommer före juli?"
+        answer: "juni"
+      - question: "Vad är 15 delat på tre?"
+        answer: ["fem", "5"]
+      - question: "Vad är fjorton minus 4?"
+        answers: ["10", "tio"]
+      - question: "Vad kommer härnäst? Måndag, Tisdag, Onsdag..?"
+        answer: "torsdag"
