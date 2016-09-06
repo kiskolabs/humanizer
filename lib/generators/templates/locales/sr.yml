@@ -1,0 +1,43 @@
+sr:
+  humanizer:
+    validation:
+      error: Robot detektovan
+    questions:
+      - question: Dva plus dva?
+        answers: ["4", "četiri", "cetiri"]
+      - question: Bajka o Ivici i ...
+        answer: ["Marici", "marici"]
+      - question: Broj pre dvanaest?
+        answers: ["11", "jedanaest"]
+      - question: Pet puta dva je?
+        answers: ["10", "deset"]
+      - question: "Nastavi niz: 10, 11, 12, 13, 14, ..."
+        answers: ["15", "petnaest"]
+      - question: "Pet puta pet?"
+        answers: ["25", "dvadeset pet", "dvadeset i pet"]
+      - question: "Deset podeljeno s dva je?"
+        answers: ["5", "pet"]
+      - question: Dan nakon ponedeljka?
+        answer: "utorak"
+      - question: Poslednji mesec u godini?
+        answer: "decembar"
+      - question: Koliko minuta ima u jednom satu?
+        answers: ["60", "šezdeset", "sezdeset"]
+      - question: Šta je suprotno od dole?
+        answer: "gore"
+      - question: Šta je nasuprot severa?
+        answer: "jug"
+      - question: Suprotno od lošeg je?
+        answer: "dobro"
+      - question: koliko je 4 put četiri?
+        answers: ["16", "šesnaest", "sesnaest"]
+      - question: Broj koji dolazi nakon 20?
+        answers: ["21", "dvadeset jedan", "dvadeset i jedan"]
+      - question: Mesec pre jula?
+        answer: "jun"
+      - question: Koliko je petnaest podeljeno s tri?
+        answer: ["pet", "5"]
+      - question: Koliko je 14 minus 4?
+        answers: ["10", "deset"]
+      - question: "Šta je sledeće? Ponedeljak, utorak, sreda.."
+        answer: ["četvrtak", "cetvrtak"]
