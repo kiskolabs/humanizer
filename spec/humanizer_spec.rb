@@ -7,7 +7,7 @@ class User
 end
 
 describe Humanizer do
-  
+
   before(:each) do
     @user = User.new
   end
@@ -25,9 +25,19 @@ describe Humanizer do
 
     context "when question localizations can't be found" do
       it "will raise an exception" do
-        with_locale :sv do
+        I18n.with_locale :sv do
           expect { @user.send(:humanizer_questions) }.to raise_error(I18n::MissingTranslationData)
         end
+      end
+    end
+
+    context "when question locale can't be found" do
+      it "will raise an exception" do
+        expect {
+          I18n.with_locale :fi do
+            @user.send(:humanizer_questions)
+          end
+         }.to raise_error(I18n::InvalidLocale)
       end
     end
 
