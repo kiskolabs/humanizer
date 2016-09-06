@@ -1,3 +1,8 @@
+### Humanizer 2.6.3 (2016-09-07)
+
+* Added translations: Danish, Serbian & Swedish
+* Additions to French translations
+
 ### Humanizer 2.6.2 (2014-11-25)
 
 * Added stripping of whitespace before comparing answers
