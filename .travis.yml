@@ -1,8 +1,8 @@
 script: "rspec spec"
 language: "ruby"
 rvm:
-  - 1.9.3
   - 2.0.0
+  - 2.3.1
   - jruby-19mode
 gemfile:
   - Gemfile
@@ -10,3 +10,8 @@ gemfile:
   - Gemfile.rails-4.0.x
 notifications:
   disable: true
+
+matrix:
+  exclude:
+    - rvm: 2.0.0
+      gemfile: Gemfile
