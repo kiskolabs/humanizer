@@ -44,27 +44,27 @@ describe Humanizer do
   end
 
   context "question" do
-    
+
     context "id" do
-      
+
       it "is a random index for the questions array" do
         @user.should_receive(:humanizer_questions).and_return([1])
         @user.humanizer_question_id.should == 0
       end
-      
+
     end
-    
+
     it "is retrieved based on the set id" do
       @user.should_receive(:humanizer_question_id).and_return(0)
       @user.humanizer_question.should == "Two plus two?"
       @user.should_receive(:humanizer_question_id).and_return(1)
       @user.humanizer_question.should == "Jack and Jill went up the..."
     end
-    
+
   end
-  
+
   context "answer" do
-    
+
     it "is retrieved for a given id" do
       answers_for_id_0 = @user.send(:humanizer_answers_for_id, 0)
       answers_for_id_1 = @user.send(:humanizer_answers_for_id, 1)
@@ -73,11 +73,11 @@ describe Humanizer do
       answers_for_id_0.should include("four")
       answers_for_id_1.should == ["hill"]
     end
-    
+
   end
-  
+
   context "correct answer" do
-    
+
     it "can be any of the answers" do
       @user.humanizer_question_id = 0
       @user.humanizer_answer = "4"
@@ -85,7 +85,7 @@ describe Humanizer do
       @user.humanizer_answer = "four"
       @user.humanizer_correct_answer?.should be_true
     end
-    
+
     it "is case-insensitive" do
       @user.humanizer_question_id = 1
       @user.humanizer_answer = "HILL"
@@ -93,13 +93,13 @@ describe Humanizer do
       @user.humanizer_answer = "hiLL"
       @user.humanizer_correct_answer?.should be_true
     end
-    
+
     it "cannot be nil" do
       @user.humanizer_question_id = 0
       @user.humanizer_answer = nil
       @user.humanizer_correct_answer?.should be_false
     end
-    
+
     it "cannot be an answer that doesn't match" do
       @user.humanizer_question_id = 1
       @user.humanizer_answer = "slope"
@@ -117,11 +117,16 @@ describe Humanizer do
       @user.humanizer_answer = " 4 "
       @user.humanizer_correct_answer?.should be_true
     end
-    
+
+    it "is cannot be an answer when questing not exist" do
+      @user.humanizer_question_id = 10_000
+      @user.humanizer_correct_answer?.should be_false
+    end
+
   end
-  
+
   describe "#change_humanizer_question" do
-    
+
     it "sets humanizer_question_id with no params" do
       @user.change_humanizer_question
       @user.instance_variable_get(:@humanizer_question_id).should_not be_nil
