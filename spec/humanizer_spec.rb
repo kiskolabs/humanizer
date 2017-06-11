@@ -118,16 +118,21 @@ describe Humanizer do
       @user.humanizer_correct_answer?.should be_true
     end
 
+    it "is can be an answer when question(as string)" do
+      @user.humanizer_question_id = "0"
+      @user.humanizer_answer = "4"
+      @user.humanizer_correct_answer?.should be_true
+    end
+
+    it "is cannot be an answer when question(as string) not exists" do
+      @user.humanizer_question_id = "10_000"
+      @user.humanizer_correct_answer?.should be_false
+    end
+
     it "is cannot be an answer when question not exists" do
       @user.humanizer_question_id = 10_000
       @user.humanizer_correct_answer?.should be_false
     end
-
-    it "is cannot be an answer when question(as string) not exists" do
-      @user.humanizer_question_id = "1"
-      @user.humanizer_correct_answer?.should be_false
-    end
-
   end
 
   describe "#change_humanizer_question" do
