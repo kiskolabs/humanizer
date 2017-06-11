@@ -118,8 +118,13 @@ describe Humanizer do
       @user.humanizer_correct_answer?.should be_true
     end
 
-    it "is cannot be an answer when questing not exist" do
+    it "is cannot be an answer when question not exists" do
       @user.humanizer_question_id = 10_000
+      @user.humanizer_correct_answer?.should be_false
+    end
+
+    it "is cannot be an answer when question(as string) not exists" do
+      @user.humanizer_question_id = "1"
       @user.humanizer_correct_answer?.should be_false
     end
 

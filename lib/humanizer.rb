@@ -12,7 +12,7 @@ module Humanizer
   end
 
   def humanizer_question_id
-    @humanizer_question_id ||= random_humanizer_question_id
+    (@humanizer_question_id ||= random_humanizer_question_id).to_i
   end
 
   def change_humanizer_question(current=nil)
