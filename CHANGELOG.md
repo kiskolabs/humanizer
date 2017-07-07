@@ -1,3 +1,7 @@
+### Humanizer 2.6.4 (2017-07-07)
+
+* Prevents NoMethodError when form posts non-existing question id
+
 ### Humanizer 2.6.3 (2016-09-07)
 
 * Added translations: Danish, Serbian & Swedish
