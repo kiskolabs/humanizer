@@ -1,28 +1,28 @@
 module Humanizer
-  
+
   def self.included(base)
     base.extend(ClassMethods)
   end
-  
+
   attr_accessor :humanizer_answer
   attr_writer :humanizer_question_id
 
   def humanizer_question
     humanizer_questions[humanizer_question_id.to_i]["question"]
   end
-  
+
   def humanizer_question_id
-    @humanizer_question_id ||= random_humanizer_question_id
+    (@humanizer_question_id ||= random_humanizer_question_id).to_i
   end
-  
+
   def change_humanizer_question(current=nil)
     @humanizer_question_ids = nil if humanizer_question_ids.compact.count == 1
     humanizer_question_ids.delete(current) if current
     @humanizer_question_id = random_humanizer_question_id
   end
-    
+
   def humanizer_correct_answer?
-    humanizer_answer && 
+    humanizer_answer && humanizer_question_ids.include?(humanizer_question_id) &&
       humanizer_answers_for_id(humanizer_question_id).include?(humanizer_answer.mb_chars.downcase.strip)
   end
 
@@ -60,14 +60,14 @@ module Humanizer
   def humanizer_check_answer
     errors.add(:humanizer_answer, I18n.translate("humanizer.validation.error")) unless humanizer_correct_answer?
   end
-  
+
   module ClassMethods
-    
+
     def require_human_on(validate_on = nil, opts = {})
       opts[:on] = validate_on if validate_on
       validate :humanizer_check_answer,  opts
     end
-    
+
   end
-  
+
 end
