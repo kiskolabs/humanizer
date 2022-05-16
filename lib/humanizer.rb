@@ -32,14 +32,15 @@ module Humanizer
       questions = I18n.translate!("humanizer.questions")
       # Poor man's HashWithIndifferentAccess
       questions.map do |question|
-        question.default_proc = proc do |h, k|
-           case k
-             when String then sym = k.to_sym; h[sym] if h.key?(sym)
-             when Symbol then str = k.to_s; h[str] if h.key?(str)
-           end
+        config = Hash.new
+        config.default_proc = proc do |h, k|
+          case k
+            when String then sym = k.to_sym; h[sym] if h.key?(sym)
+            when Symbol then str = k.to_s; h[str] if h.key?(str)
+          end
         end
+        config.merge(question)
       end
-      questions
     end
   end
 
