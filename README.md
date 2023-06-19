@@ -1,13 +1,13 @@
 # Humanizer
 
-Humanizer is a very simple CAPTCHA method. It has a localized YAML file with questions and answers which is used to validate that the user is an actual human. Any model that includes ActiveModel::Validations should work. Our aim is to be database and mapper agnostic, so if it doesn't work for you, open an issue. Humanizer works with Rails 3 and 4.
+Humanizer is a very simple CAPTCHA method. It has a localized YAML file with questions and answers which is used to validate that the user is an actual human. Any model that includes ActiveModel::Validations should work. Our aim is to be database and mapper agnostic, so if it doesn't work for you, open an issue. Humanizer works with Rails 3–7.
 
 ## Installation
 
 Add `humanizer` to your Gemfile:
 
 ```ruby
-gem 'humanizer'
+gem "humanizer"
 ```
 
 Bundle and run the generator in terminal:
@@ -60,7 +60,7 @@ You can just have a simple attribute on your model and use it to bypass the vali
 
 ```ruby
 attr_accessor :bypass_humanizer
-require_human_on :create, :unless => :bypass_humanizer
+require_human_on :create, unless: :bypass_humanizer
 ```
 
 Now when bypass_humanizer is true, validation will be skipped.
@@ -74,11 +74,6 @@ To make sure the current question doesn't get asked again, you can pass the curr
 ```ruby
 @user.change_humanizer_question(params[:user][:humanizer_question_id])
 ```
-
-## Live sites
-
-* [ArcticStartup.com](http://arcticstartup.com/) - sign up form
-* [Paspartout](http://paspartout.com/) - sign up form
 
 ## License
 
