@@ -1,9 +1,6 @@
 script: "rspec spec"
 language: "ruby"
 rvm:
-  - 2.0.0
-  - 2.3.1
-  - 2.7.6
   - 3.0.4
   - 3.1.2
   - jruby
