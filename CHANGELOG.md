@@ -1,4 +1,4 @@
-### Humanizer 2.6.5 (2019-01-16)
+### Humanizer 2.7.1 (2024-12-19)
 
 * Adds HumanizerHelper class for use cases when developers don't have a class they want to include Humanizer on(basic contact form for example)
 
