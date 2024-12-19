@@ -1,3 +1,7 @@
+### Humanizer 2.7.1 (2024-12-19)
+
+* Adds HumanizerHelper class for use cases when developers don't have a class they want to include Humanizer on(basic contact form for example)
+
 ### Humanizer 2.6.4 (2017-07-07)
 
 * Prevents NoMethodError when form posts non-existing question id
