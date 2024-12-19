@@ -30,16 +30,15 @@ module Humanizer
   def humanizer_questions
     @humanizer_questions ||= begin
       questions = I18n.translate!("humanizer.questions")
-      # Poor man's HashWithIndifferentAccess
+      # Create new mutable copies of the questions with indifferent access
       questions.map do |question|
-        question.default_proc = proc do |h, k|
-           case k
-             when String then sym = k.to_sym; h[sym] if h.key?(sym)
-             when Symbol then str = k.to_s; h[str] if h.key?(str)
-           end
+        new_hash = {}
+        question.each do |k, v|
+          new_hash[k.to_s] = v  # Store everything with string keys
+          new_hash[k.to_sym] = v # Store everything with symbol keys
         end
+        new_hash
       end
-      questions
     end
   end
 
